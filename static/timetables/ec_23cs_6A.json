@@ -22,6 +22,7 @@
                 "ttSubject_&&UE23CS351B-CLOUD COMPUTING",
                 "ttFaculty_1_&&MANJU NUNIA"
               ],
+              "sub_code": "CC",
               "subject": "UE23CS351B-CLOUD COMPUTING"
             }
           ],
@@ -43,6 +44,7 @@
                 "ttSubject_&&UE23CS351B-CLOUD COMPUTING",
                 "ttFaculty_1_&&MANJU NUNIA"
               ],
+              "sub_code": "CC",
               "subject": "UE23CS351B-CLOUD COMPUTING"
             }
           ],
@@ -72,6 +74,7 @@
                 "ttSubject_&&UE23CS343BB6-INFORMATION SECURITY",
                 "ttFaculty_1_&&VINODHA K"
               ],
+              "sub_code": "IS",
               "subject": "UE23CS343BB6-INFORMATION SECURITY"
             },
             {
@@ -84,6 +87,7 @@
                 "ttSubject_&&UE23CS343BB7-MOBILE AUTONOMOUS ROBOTICS",
                 "ttFaculty_1_&&NAGALAKSHMI S R"
               ],
+              "sub_code": "MARS",
               "subject": "UE23CS343BB7-MOBILE AUTONOMOUS ROBOTICS"
             },
             {
@@ -96,6 +100,7 @@
                 "ttSubject_&&UE23CS343BB2-TOPICS IN DEEP LEARNING",
                 "ttFaculty_1_&&DR M FARIDA BEGAM"
               ],
+              "sub_code": "TDL",
               "subject": "UE23CS343BB2-TOPICS IN DEEP LEARNING"
             }
           ],
@@ -117,6 +122,7 @@
                 "ttSubject_&&UE23CS343BB6-INFORMATION SECURITY",
                 "ttFaculty_1_&&VINODHA K"
               ],
+              "sub_code": "IS",
               "subject": "UE23CS343BB6-INFORMATION SECURITY"
             },
             {
@@ -129,6 +135,7 @@
                 "ttSubject_&&UE23CS343BB7-MOBILE AUTONOMOUS ROBOTICS",
                 "ttFaculty_1_&&NAGALAKSHMI S R"
               ],
+              "sub_code": "MARS",
               "subject": "UE23CS343BB7-MOBILE AUTONOMOUS ROBOTICS"
             },
             {
@@ -141,6 +148,7 @@
                 "ttSubject_&&UE23CS343BB2-TOPICS IN DEEP LEARNING",
                 "ttFaculty_1_&&DR M FARIDA BEGAM"
               ],
+              "sub_code": "TDL",
               "subject": "UE23CS343BB2-TOPICS IN DEEP LEARNING"
             }
           ],
@@ -199,6 +207,7 @@
                 "ttSubject_&&UE23CS342BA6-DIGITAL FORENSICS AND INCIDENT RESPONSES",
                 "ttFaculty_1_&&M SHEELA DEVI"
               ],
+              "sub_code": "DFIR",
               "subject": "UE23CS342BA6-DIGITAL FORENSICS AND INCIDENT RESPONSES"
             },
             {
@@ -211,6 +220,7 @@
                 "ttSubject_&&UE23CS342BA7-DIGITAL TWINS",
                 "ttFaculty_1_&&MANNAR MANNAN J"
               ],
+              "sub_code": "DXT",
               "subject": "UE23CS342BA7-DIGITAL TWINS"
             }
           ],
@@ -232,6 +242,7 @@
                 "ttSubject_&&UE23CS342BA6-DIGITAL FORENSICS AND INCIDENT RESPONSES",
                 "ttFaculty_1_&&M SHEELA DEVI"
               ],
+              "sub_code": "DFIR",
               "subject": "UE23CS342BA6-DIGITAL FORENSICS AND INCIDENT RESPONSES"
             },
             {
@@ -244,6 +255,7 @@
                 "ttSubject_&&UE23CS342BA7-DIGITAL TWINS",
                 "ttFaculty_1_&&MANNAR MANNAN J"
               ],
+              "sub_code": "DXT",
               "subject": "UE23CS342BA7-DIGITAL TWINS"
             }
           ],
@@ -273,6 +285,7 @@
                 "ttSubject_&&UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN",
                 "ttFaculty_1_&&SENTHIL ANANDHI AVANASHILINGAM"
               ],
+              "sub_code": "OOAD",
               "subject": "UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN"
             }
           ],
@@ -294,6 +307,7 @@
                 "ttSubject_&&UE23CS341B-COMPILER DESIGN",
                 "ttFaculty_1_&&SHEMEEMA"
               ],
+              "sub_code": "CD",
               "subject": "UE23CS341B-COMPILER DESIGN"
             }
           ],
@@ -323,6 +337,7 @@
                 "ttSubject_&&UE23CS351B-CLOUD COMPUTING",
                 "ttFaculty_1_&&RAMYA SRI CHAGANTI"
               ],
+              "sub_code": "CC",
               "subject": "UE23CS351B-CLOUD COMPUTING"
             }
           ],
@@ -344,6 +359,7 @@
                 "ttSubject_&&UE23CS351B-CLOUD COMPUTING",
                 "ttFaculty_1_&&RAMYA SRI CHAGANTI"
               ],
+              "sub_code": "CC",
               "subject": "UE23CS351B-CLOUD COMPUTING"
             }
           ],
@@ -378,6 +394,7 @@
                 "ttSubject_&&UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN",
                 "ttFaculty_1_&&SENTHIL ANANDHI AVANASHILINGAM"
               ],
+              "sub_code": "OOAD",
               "subject": "UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN"
             }
           ],
@@ -399,6 +416,7 @@
                 "ttSubject_&&UE23CS341B-COMPILER DESIGN",
                 "ttFaculty_1_&&SHEMEEMA"
               ],
+              "sub_code": "CD",
               "subject": "UE23CS341B-COMPILER DESIGN"
             }
           ],
@@ -428,6 +446,7 @@
                 "ttSubject_&&UE23CS341B-COMPILER DESIGN",
                 "ttFaculty_1_&&SHEMEEMA"
               ],
+              "sub_code": "CD",
               "subject": "UE23CS341B-COMPILER DESIGN"
             }
           ],
@@ -449,6 +468,7 @@
                 "ttSubject_&&UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN",
                 "ttFaculty_1_&&SENTHIL ANANDHI AVANASHILINGAM"
               ],
+              "sub_code": "OOAD",
               "subject": "UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN"
             }
           ],
@@ -507,6 +527,7 @@
                 "ttSubject_&&UE23CS343BB6-INFORMATION SECURITY",
                 "ttFaculty_1_&&VINODHA K"
               ],
+              "sub_code": "IS",
               "subject": "UE23CS343BB6-INFORMATION SECURITY"
             },
             {
@@ -519,6 +540,7 @@
                 "ttSubject_&&UE23CS343BB2-TOPICS IN DEEP LEARNING",
                 "ttFaculty_1_&&DR M FARIDA BEGAM"
               ],
+              "sub_code": "TDL",
               "subject": "UE23CS343BB2-TOPICS IN DEEP LEARNING"
             }
           ],
@@ -540,6 +562,7 @@
                 "ttSubject_&&UE23CS343BB6-INFORMATION SECURITY",
                 "ttFaculty_1_&&VINODHA K"
               ],
+              "sub_code": "IS",
               "subject": "UE23CS343BB6-INFORMATION SECURITY"
             },
             {
@@ -552,6 +575,7 @@
                 "ttSubject_&&UE23CS343BB2-TOPICS IN DEEP LEARNING",
                 "ttFaculty_1_&&DR M FARIDA BEGAM"
               ],
+              "sub_code": "TDL",
               "subject": "UE23CS343BB2-TOPICS IN DEEP LEARNING"
             }
           ],
@@ -581,6 +605,7 @@
                 "ttSubject_&&UE23CS341B-COMPILER DESIGN",
                 "ttFaculty_1_&&SHEMEEMA"
               ],
+              "sub_code": "CD",
               "subject": "UE23CS341B-COMPILER DESIGN"
             }
           ],
@@ -602,6 +627,7 @@
                 "ttSubject_&&UE23CS351B-CLOUD COMPUTING",
                 "ttFaculty_1_&&MANJU NUNIA"
               ],
+              "sub_code": "CC",
               "subject": "UE23CS351B-CLOUD COMPUTING"
             }
           ],
@@ -631,6 +657,7 @@
                 "ttSubject_&&UE23CS343BB7-MOBILE AUTONOMOUS ROBOTICS",
                 "ttFaculty_1_&&NAGALAKSHMI S R"
               ],
+              "sub_code": "MARS",
               "subject": "UE23CS343BB7-MOBILE AUTONOMOUS ROBOTICS"
             }
           ],
@@ -652,6 +679,7 @@
                 "ttSubject_&&UE23CS343BB7-MOBILE AUTONOMOUS ROBOTICS",
                 "ttFaculty_1_&&NAGALAKSHMI S R"
               ],
+              "sub_code": "MARS",
               "subject": "UE23CS343BB7-MOBILE AUTONOMOUS ROBOTICS"
             }
           ],
@@ -686,6 +714,7 @@
                 "ttSubject_&&UE23CS341B-COMPILER DESIGN",
                 "ttFaculty_1_&&SHEMEEMA"
               ],
+              "sub_code": "CD",
               "subject": "UE23CS341B-COMPILER DESIGN"
             }
           ],
@@ -707,6 +736,7 @@
                 "ttSubject_&&UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN",
                 "ttFaculty_1_&&SENTHIL ANANDHI AVANASHILINGAM"
               ],
+              "sub_code": "OOAD",
               "subject": "UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN"
             }
           ],
@@ -736,6 +766,7 @@
                 "ttSubject_&&UE23CS342BA6-DIGITAL FORENSICS AND INCIDENT RESPONSES",
                 "ttFaculty_1_&&M SHEELA DEVI"
               ],
+              "sub_code": "DFIR",
               "subject": "UE23CS342BA6-DIGITAL FORENSICS AND INCIDENT RESPONSES"
             },
             {
@@ -748,6 +779,7 @@
                 "ttSubject_&&UE23CS342BA7-DIGITAL TWINS",
                 "ttFaculty_1_&&MANNAR MANNAN J"
               ],
+              "sub_code": "DXT",
               "subject": "UE23CS342BA7-DIGITAL TWINS"
             }
           ],
@@ -769,6 +801,7 @@
                 "ttSubject_&&UE23CS342BA6-DIGITAL FORENSICS AND INCIDENT RESPONSES",
                 "ttFaculty_1_&&M SHEELA DEVI"
               ],
+              "sub_code": "DFIR",
               "subject": "UE23CS342BA6-DIGITAL FORENSICS AND INCIDENT RESPONSES"
             },
             {
@@ -781,6 +814,7 @@
                 "ttSubject_&&UE23CS342BA7-DIGITAL TWINS",
                 "ttFaculty_1_&&MANNAR MANNAN J"
               ],
+              "sub_code": "DXT",
               "subject": "UE23CS342BA7-DIGITAL TWINS"
             }
           ],
@@ -810,6 +844,7 @@
                 "ttSubject_&&UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN",
                 "ttFaculty_1_&&SENTHIL ANANDHI AVANASHILINGAM"
               ],
+              "sub_code": "OOAD",
               "subject": "UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN"
             }
           ],
@@ -831,6 +866,7 @@
                 "ttSubject_&&UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN",
                 "ttFaculty_1_&&SENTHIL ANANDHI AVANASHILINGAM"
               ],
+              "sub_code": "OOAD",
               "subject": "UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN"
             }
           ],
