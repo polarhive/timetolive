@@ -1,0 +1,529 @@
+{
+  "meta": {
+    "Batch": "B 0512",
+    "Class Name": "Sem-6",
+    "Department": "2023-24",
+    "Room": "B 0512",
+    "Section": "Section C"
+  },
+  "schedule": [
+    {
+      "day": "Monday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE23CS341B",
+              "faculties": [
+                "GAYATHRI R S"
+              ],
+              "name": "COMPILER DESIGN",
+              "raw": [
+                "ttSubject_&&UE23CS341B-COMPILER DESIGN",
+                "ttFaculty_1_&&GAYATHRI R S"
+              ],
+              "sub_code": "CD",
+              "subject": "UE23CS341B-COMPILER DESIGN"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23CS352B",
+              "faculties": [
+                "SHRIDEVI"
+              ],
+              "name": "OBJECT ORIENTED ANALYSIS AND DESIGN",
+              "raw": [
+                "ttSubject_&&UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN",
+                "ttFaculty_1_&&SHRIDEVI"
+              ],
+              "sub_code": "OOAD",
+              "subject": "UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23CS352B",
+              "faculties": [
+                "SHRIDEVI"
+              ],
+              "name": "OBJECT ORIENTED ANALYSIS AND DESIGN",
+              "raw": [
+                "ttSubject_&&UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN",
+                "ttFaculty_1_&&SHRIDEVI"
+              ],
+              "sub_code": "OOAD",
+              "subject": "UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN"
+            }
+          ],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23CS352B",
+              "faculties": [
+                "SHRIDEVI"
+              ],
+              "name": "OBJECT ORIENTED ANALYSIS AND DESIGN",
+              "raw": [
+                "ttSubject_&&UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN",
+                "ttFaculty_1_&&SHRIDEVI"
+              ],
+              "sub_code": "OOAD",
+              "subject": "UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN"
+            }
+          ],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "slots": [
+        {
+          "cells": [],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "slots": [
+        {
+          "cells": [],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "slots": [
+        {
+          "cells": [],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Friday",
+      "slots": [
+        {
+          "cells": [],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "slots": [
+        {
+          "cells": [],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    }
+  ]
+}
