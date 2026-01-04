@@ -1,0 +1,973 @@
+{
+  "meta": {
+    "Batch": "Main 601",
+    "Class Name": "Sem-6",
+    "Department": "2023-24",
+    "Room": "Main 601",
+    "Section": "Section A"
+  },
+  "schedule": [
+    {
+      "day": "Monday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE23EC351B",
+              "faculties": [
+                "SWETHA RAVIKANTI"
+              ],
+              "name": "TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS",
+              "raw": [
+                "ttSubject_&&UE23EC351B-TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS",
+                "ttFaculty_1_&&SWETHA RAVIKANTI"
+              ],
+              "sub_code": "TLWA",
+              "subject": "UE23EC351B-TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC341B",
+              "faculties": [
+                "MAHESH A AWATI"
+              ],
+              "name": "HIGH PERFORMANCE COMPUTING",
+              "raw": [
+                "ttSubject_&&UE23EC341B-HIGH PERFORMANCE COMPUTING",
+                "ttFaculty_1_&&MAHESH A AWATI"
+              ],
+              "sub_code": "HPC",
+              "subject": "UE23EC341B-HIGH PERFORMANCE COMPUTING"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC343BB2",
+              "faculties": [
+                "VINAY REDDY"
+              ],
+              "name": "VLSI CIRCUIT TESTING AND TESTABILITY",
+              "raw": [
+                "ttSubject_&&UE23EC343BB2-VLSI CIRCUIT TESTING AND TESTABILITY",
+                "ttFaculty_1_&&VINAY REDDY"
+              ],
+              "sub_code": "Testing",
+              "subject": "UE23EC343BB2-VLSI CIRCUIT TESTING AND TESTABILITY"
+            },
+            {
+              "code": "UE23EC343BC2",
+              "faculties": [
+                "PROF ARPITHA K"
+              ],
+              "name": "ROBOTIC SYSTEMS",
+              "raw": [
+                "ttSubject_&&UE23EC343BC2-ROBOTIC SYSTEMS",
+                "ttFaculty_1_&&PROF ARPITHA K"
+              ],
+              "sub_code": "",
+              "subject": "UE23EC343BC2-ROBOTIC SYSTEMS"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC343BB2",
+              "faculties": [
+                "VINAY REDDY"
+              ],
+              "name": "VLSI CIRCUIT TESTING AND TESTABILITY",
+              "raw": [
+                "ttSubject_&&UE23EC343BB2-VLSI CIRCUIT TESTING AND TESTABILITY",
+                "ttFaculty_1_&&VINAY REDDY"
+              ],
+              "sub_code": "Testing",
+              "subject": "UE23EC343BB2-VLSI CIRCUIT TESTING AND TESTABILITY"
+            },
+            {
+              "code": "UE23EC343BC2",
+              "faculties": [
+                "PROF ARPITHA K"
+              ],
+              "name": "ROBOTIC SYSTEMS",
+              "raw": [
+                "ttSubject_&&UE23EC343BC2-ROBOTIC SYSTEMS",
+                "ttFaculty_1_&&PROF ARPITHA K"
+              ],
+              "sub_code": "",
+              "subject": "UE23EC343BC2-ROBOTIC SYSTEMS"
+            }
+          ],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC351B",
+              "faculties": [
+                "SWETHA RAVIKANTI"
+              ],
+              "name": "TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS",
+              "raw": [
+                "ttSubject_&&UE23EC351B-TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS",
+                "ttFaculty_1_&&SWETHA RAVIKANTI"
+              ],
+              "sub_code": "TLWA",
+              "subject": "UE23EC351B-TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS"
+            }
+          ],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE23EC342BA1",
+              "faculties": [
+                "SANGAM KUMAR"
+              ],
+              "name": "CRYPTOGRAPHY",
+              "raw": [
+                "ttSubject_&&UE23EC342BA1-CRYPTOGRAPHY",
+                "ttFaculty_1_&&SANGAM KUMAR"
+              ],
+              "sub_code": "Cryptography",
+              "subject": "UE23EC342BA1-CRYPTOGRAPHY"
+            },
+            {
+              "code": "UE23EC342BB2",
+              "faculties": [
+                "DR. SHASHIDHAR TANTRY"
+              ],
+              "name": "RF MICROELECTRONICS",
+              "raw": [
+                "ttSubject_&&UE23EC342BB2-RF MICROELECTRONICS",
+                "ttFaculty_1_&&DR. SHASHIDHAR TANTRY"
+              ],
+              "sub_code": "",
+              "subject": "UE23EC342BB2-RF MICROELECTRONICS"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC342BA1",
+              "faculties": [
+                "SANGAM KUMAR"
+              ],
+              "name": "CRYPTOGRAPHY",
+              "raw": [
+                "ttSubject_&&UE23EC342BA1-CRYPTOGRAPHY",
+                "ttFaculty_1_&&SANGAM KUMAR"
+              ],
+              "sub_code": "Cryptography",
+              "subject": "UE23EC342BA1-CRYPTOGRAPHY"
+            },
+            {
+              "code": "UE23EC342BB2",
+              "faculties": [
+                "DR. SHASHIDHAR TANTRY"
+              ],
+              "name": "RF MICROELECTRONICS",
+              "raw": [
+                "ttSubject_&&UE23EC342BB2-RF MICROELECTRONICS",
+                "ttFaculty_1_&&DR. SHASHIDHAR TANTRY"
+              ],
+              "sub_code": "",
+              "subject": "UE23EC342BB2-RF MICROELECTRONICS"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC351B",
+              "faculties": [
+                "SWETHA RAVIKANTI"
+              ],
+              "name": "TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS",
+              "raw": [
+                "ttSubject_&&UE23EC351B-TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS",
+                "ttFaculty_1_&&SWETHA RAVIKANTI"
+              ],
+              "sub_code": "TLWA",
+              "subject": "UE23EC351B-TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC341B",
+              "faculties": [
+                "MAHESH A AWATI"
+              ],
+              "name": "HIGH PERFORMANCE COMPUTING",
+              "raw": [
+                "ttSubject_&&UE23EC341B-HIGH PERFORMANCE COMPUTING",
+                "ttFaculty_1_&&MAHESH A AWATI"
+              ],
+              "sub_code": "HPC",
+              "subject": "UE23EC341B-HIGH PERFORMANCE COMPUTING"
+            }
+          ],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC321B",
+              "faculties": [
+                "BAJARANGBALI REDDY",
+                "MURALIDHAR SHANBHAG"
+              ],
+              "name": "PROJECT WORK PHASE-II",
+              "raw": [
+                "ttSubject_&&UE23EC321B-PROJECT WORK PHASE-II",
+                "ttFaculty_1_&&BAJARANGBALI REDDY",
+                "ttFaculty_2_&&MURALIDHAR SHANBHAG"
+              ],
+              "sub_code": "CS-P2",
+              "subject": "UE23EC321B-PROJECT WORK PHASE-II"
+            }
+          ],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC321B",
+              "faculties": [
+                "BAJARANGBALI REDDY",
+                "MURALIDHAR SHANBHAG"
+              ],
+              "name": "PROJECT WORK PHASE-II",
+              "raw": [
+                "ttSubject_&&UE23EC321B-PROJECT WORK PHASE-II",
+                "ttFaculty_1_&&BAJARANGBALI REDDY",
+                "ttFaculty_2_&&MURALIDHAR SHANBHAG"
+              ],
+              "sub_code": "CS-P2",
+              "subject": "UE23EC321B-PROJECT WORK PHASE-II"
+            }
+          ],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE23EC351B",
+              "faculties": [
+                "SWETHA RAVIKANTI"
+              ],
+              "name": "TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS",
+              "raw": [
+                "ttSubject_&&UE23EC351B-TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS",
+                "ttFaculty_1_&&SWETHA RAVIKANTI"
+              ],
+              "sub_code": "TLWA",
+              "subject": "UE23EC351B-TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC341B",
+              "faculties": [
+                "MAHESH A AWATI"
+              ],
+              "name": "HIGH PERFORMANCE COMPUTING",
+              "raw": [
+                "ttSubject_&&UE23EC341B-HIGH PERFORMANCE COMPUTING",
+                "ttFaculty_1_&&MAHESH A AWATI"
+              ],
+              "sub_code": "HPC",
+              "subject": "UE23EC341B-HIGH PERFORMANCE COMPUTING"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC352B",
+              "faculties": [
+                "DR AJEY S N R"
+              ],
+              "name": "MACHINE LEARNING AND APPLICATIONS",
+              "raw": [
+                "ttSubject_&&UE23EC352B-MACHINE LEARNING AND APPLICATIONS",
+                "ttFaculty_1_&&DR AJEY S N R"
+              ],
+              "sub_code": "MLA",
+              "subject": "UE23EC352B-MACHINE LEARNING AND APPLICATIONS"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE23EC343BB2",
+              "faculties": [
+                "VINAY REDDY"
+              ],
+              "name": "VLSI CIRCUIT TESTING AND TESTABILITY",
+              "raw": [
+                "ttSubject_&&UE23EC343BB2-VLSI CIRCUIT TESTING AND TESTABILITY",
+                "ttFaculty_1_&&VINAY REDDY"
+              ],
+              "sub_code": "Testing",
+              "subject": "UE23EC343BB2-VLSI CIRCUIT TESTING AND TESTABILITY"
+            },
+            {
+              "code": "UE23EC343BC2",
+              "faculties": [
+                "ARPITA THAKRE"
+              ],
+              "name": "ROBOTIC SYSTEMS",
+              "raw": [
+                "ttSubject_&&UE23EC343BC2-ROBOTIC SYSTEMS",
+                "ttFaculty_1_&&ARPITA THAKRE"
+              ],
+              "sub_code": "",
+              "subject": "UE23EC343BC2-ROBOTIC SYSTEMS"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC343BB2",
+              "faculties": [
+                "VINAY REDDY"
+              ],
+              "name": "VLSI CIRCUIT TESTING AND TESTABILITY",
+              "raw": [
+                "ttSubject_&&UE23EC343BB2-VLSI CIRCUIT TESTING AND TESTABILITY",
+                "ttFaculty_1_&&VINAY REDDY"
+              ],
+              "sub_code": "Testing",
+              "subject": "UE23EC343BB2-VLSI CIRCUIT TESTING AND TESTABILITY"
+            },
+            {
+              "code": "UE23EC343BC2",
+              "faculties": [
+                "ARPITA THAKRE"
+              ],
+              "name": "ROBOTIC SYSTEMS",
+              "raw": [
+                "ttSubject_&&UE23EC343BC2-ROBOTIC SYSTEMS",
+                "ttFaculty_1_&&ARPITA THAKRE"
+              ],
+              "sub_code": "",
+              "subject": "UE23EC343BC2-ROBOTIC SYSTEMS"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC352B",
+              "faculties": [
+                "DR AJEY S N R"
+              ],
+              "name": "MACHINE LEARNING AND APPLICATIONS",
+              "raw": [
+                "ttSubject_&&UE23EC352B-MACHINE LEARNING AND APPLICATIONS",
+                "ttFaculty_1_&&DR AJEY S N R"
+              ],
+              "sub_code": "MLA",
+              "subject": "UE23EC352B-MACHINE LEARNING AND APPLICATIONS"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC341B",
+              "faculties": [
+                "MAHESH A AWATI"
+              ],
+              "name": "HIGH PERFORMANCE COMPUTING",
+              "raw": [
+                "ttSubject_&&UE23EC341B-HIGH PERFORMANCE COMPUTING",
+                "ttFaculty_1_&&MAHESH A AWATI"
+              ],
+              "sub_code": "HPC",
+              "subject": "UE23EC341B-HIGH PERFORMANCE COMPUTING"
+            }
+          ],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC352B",
+              "faculties": [
+                "SHREYUS GOUATHAM KUMAR"
+              ],
+              "name": "MACHINE LEARNING AND APPLICATIONS",
+              "raw": [
+                "ttSubject_&&UE23EC352B-MACHINE LEARNING AND APPLICATIONS",
+                "ttFaculty_1_&&SHREYUS GOUATHAM KUMAR"
+              ],
+              "sub_code": "MLA",
+              "subject": "UE23EC352B-MACHINE LEARNING AND APPLICATIONS"
+            }
+          ],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC352B",
+              "faculties": [
+                "SHREYUS GOUATHAM KUMAR"
+              ],
+              "name": "MACHINE LEARNING AND APPLICATIONS",
+              "raw": [
+                "ttSubject_&&UE23EC352B-MACHINE LEARNING AND APPLICATIONS",
+                "ttFaculty_1_&&SHREYUS GOUATHAM KUMAR"
+              ],
+              "sub_code": "MLA",
+              "subject": "UE23EC352B-MACHINE LEARNING AND APPLICATIONS"
+            }
+          ],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC352B",
+              "faculties": [
+                "SHREYUS GOUATHAM KUMAR"
+              ],
+              "name": "MACHINE LEARNING AND APPLICATIONS",
+              "raw": [
+                "ttSubject_&&UE23EC352B-MACHINE LEARNING AND APPLICATIONS",
+                "ttFaculty_1_&&SHREYUS GOUATHAM KUMAR"
+              ],
+              "sub_code": "MLA",
+              "subject": "UE23EC352B-MACHINE LEARNING AND APPLICATIONS"
+            }
+          ],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Friday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE23EC341B",
+              "faculties": [
+                "MAHESH A AWATI"
+              ],
+              "name": "HIGH PERFORMANCE COMPUTING",
+              "raw": [
+                "ttSubject_&&UE23EC341B-HIGH PERFORMANCE COMPUTING",
+                "ttFaculty_1_&&MAHESH A AWATI"
+              ],
+              "sub_code": "HPC",
+              "subject": "UE23EC341B-HIGH PERFORMANCE COMPUTING"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC352B",
+              "faculties": [
+                "DR AJEY S N R"
+              ],
+              "name": "MACHINE LEARNING AND APPLICATIONS",
+              "raw": [
+                "ttSubject_&&UE23EC352B-MACHINE LEARNING AND APPLICATIONS",
+                "ttFaculty_1_&&DR AJEY S N R"
+              ],
+              "sub_code": "MLA",
+              "subject": "UE23EC352B-MACHINE LEARNING AND APPLICATIONS"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC342BA1",
+              "faculties": [
+                "SANGAM KUMAR"
+              ],
+              "name": "CRYPTOGRAPHY",
+              "raw": [
+                "ttSubject_&&UE23EC342BA1-CRYPTOGRAPHY",
+                "ttFaculty_1_&&SANGAM KUMAR"
+              ],
+              "sub_code": "Cryptography",
+              "subject": "UE23EC342BA1-CRYPTOGRAPHY"
+            },
+            {
+              "code": "UE23EC342BB2",
+              "faculties": [
+                "DR. SHASHIDHAR TANTRY"
+              ],
+              "name": "RF MICROELECTRONICS",
+              "raw": [
+                "ttSubject_&&UE23EC342BB2-RF MICROELECTRONICS",
+                "ttFaculty_1_&&DR. SHASHIDHAR TANTRY"
+              ],
+              "sub_code": "",
+              "subject": "UE23EC342BB2-RF MICROELECTRONICS"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC342BA1",
+              "faculties": [
+                "SANGAM KUMAR"
+              ],
+              "name": "CRYPTOGRAPHY",
+              "raw": [
+                "ttSubject_&&UE23EC342BA1-CRYPTOGRAPHY",
+                "ttFaculty_1_&&SANGAM KUMAR"
+              ],
+              "sub_code": "Cryptography",
+              "subject": "UE23EC342BA1-CRYPTOGRAPHY"
+            },
+            {
+              "code": "UE23EC342BB2",
+              "faculties": [
+                "DR. SHASHIDHAR TANTRY"
+              ],
+              "name": "RF MICROELECTRONICS",
+              "raw": [
+                "ttSubject_&&UE23EC342BB2-RF MICROELECTRONICS",
+                "ttFaculty_1_&&DR. SHASHIDHAR TANTRY"
+              ],
+              "sub_code": "",
+              "subject": "UE23EC342BB2-RF MICROELECTRONICS"
+            }
+          ],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC351B",
+              "faculties": [
+                "SWETHA RAVIKANTI"
+              ],
+              "name": "TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS",
+              "raw": [
+                "ttSubject_&&UE23EC351B-TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS",
+                "ttFaculty_1_&&SWETHA RAVIKANTI"
+              ],
+              "sub_code": "TLWA",
+              "subject": "UE23EC351B-TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS"
+            }
+          ],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC351B",
+              "faculties": [
+                "SWETHA RAVIKANTI"
+              ],
+              "name": "TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS",
+              "raw": [
+                "ttSubject_&&UE23EC351B-TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS",
+                "ttFaculty_1_&&SWETHA RAVIKANTI"
+              ],
+              "sub_code": "TLWA",
+              "subject": "UE23EC351B-TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS"
+            }
+          ],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23EC351B",
+              "faculties": [
+                "SWETHA RAVIKANTI"
+              ],
+              "name": "TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS",
+              "raw": [
+                "ttSubject_&&UE23EC351B-TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS",
+                "ttFaculty_1_&&SWETHA RAVIKANTI"
+              ],
+              "sub_code": "TLWA",
+              "subject": "UE23EC351B-TRANSMISSION LINES, WAVEGUIDES AND ANTENNAS"
+            }
+          ],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "slots": [
+        {
+          "cells": [],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    }
+  ]
+}
