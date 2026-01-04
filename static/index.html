@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>PESU Timetable</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="TTL - View and compare your TimeTabLes with friends. Find common free periods">
+    <meta name="keywords" content="PESU, timetable, schedule, classes, university, students, free periods, compare">
+    <meta name="author" content="PESU">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TTL">
+    <meta property="og:description" content="View and compare your class TimeTabLes with friends">
+    <meta property="og:image" content="/static/rabbit.webp">
+
+    <link rel="icon" type="image/webp" href="/static/rabbit.webp">
+    <link rel="stylesheet" href="/static/flexoki.css">
+    <link rel="stylesheet" href="/static/flexoki-utilities.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Small spinner used on login button */
+        .spinner {
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(0, 0, 0, 0.15);
+            border-top-color: #000;
+            border-radius: 50%;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 8px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Disabled state subtle style */
+        .login-form button[disabled] {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="login" class="login-container">
+        <img src="/static/rabbit.webp" alt="Rabbit" class="rabbit-image">
+        <div class="hero-section">
+            <h1>TTL: Timetable</h1>
+            <p>Please log in to access your timetable.</p>
+        </div>
+        <form id="login-form" class="login-form">
+            <input type="text" id="srn" placeholder="SRN" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="main-app" class="app" style="display: none;">
+        <header>
+            <div class="title-wrap">
+                <h1>Timetable</h1>
+            </div>
+            <div id="header-right">
+            </div>
+        </header>
+    </div>
+
+    <script src="/static/script.js"></script>
+    <script src="/static/i.js"></script>
+</body>
+
+</html>

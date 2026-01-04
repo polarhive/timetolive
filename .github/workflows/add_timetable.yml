@@ -1,0 +1,45 @@
+name: Add Timetable
+
+on:
+  repository_dispatch:
+    types: [new_timetable]
+
+permissions:
+  contents: write
+
+jobs:
+  add-timetable:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+
+      - name: Create timetables dir
+        run: mkdir -p static/timetables
+
+      - name: Write, commit and push timetable (safe)
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const fs = require('fs');
+            const cp = require('child_process');
+            console.log('Full payload received:');
+            console.log(JSON.stringify(context.payload, null, 2));
+            const payload = (context.payload && context.payload.client_payload) ? context.payload.client_payload : {};
+            const filename = payload.filename || `timetable_${Date.now()}`;
+            const timetable = payload.timetable || {};
+            const filepath = `static/timetables/${filename}.json`;
+            fs.mkdirSync('static/timetables', { recursive: true });
+            fs.writeFileSync(filepath, JSON.stringify(timetable, null, 2), { encoding: 'utf8' });
+
+            cp.execSync('git config user.name "github-actions[bot]"');
+            cp.execSync('git config user.email "41898282+github-actions[bot]@users.noreply.github.com"');
+            cp.execSync(`git add ${filepath}`);
+            try {
+              cp.execSync(`git commit -m "Add timetable: ${filename}"`);
+            } catch (e) {
+              console.log('No changes to commit');
+            }
+            cp.execSync('git push');

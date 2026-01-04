@@ -1,0 +1,745 @@
+:root {
+    /* Use a single, consistent font-stack across the app */
+    --font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-content: var(--font-family);
+    --font-ui: var(--font-family);
+
+    /* Typography scale (use rem-based variables for consistency) */
+    --font-base: clamp(1.8rem, calc(1.85rem + 0.2vw), 2.2rem);
+    --font-h1: 2.5rem;
+    --font-subject: 1.8rem;
+    --font-faculty: 1.5rem;
+    --font-small: 1.6rem;
+    --font-smaller: 1.3rem;
+
+    --border-radius: 4px;
+    --wrap-wide: 54em;
+    --wrap-normal: 37em;
+    --heading-weight: 500;
+    --input-width: 20em;
+    --cell-max-width: 20rem;
+    /* max width for timetable cells */
+    /* Consistent cell sizing (can be tuned) */
+    --cell-min-width: 12rem;
+    --cell-min-height: 6rem;
+    /* 60px */
+    --cell-max-height: 12rem;
+    /* 192px */
+    --image-radius: 6px;
+    --line-height: 1.5;
+    --cell-height: 6rem;
+    --cell-height-mobile: 4.4rem;
+    --cell-padding: 0.4rem;
+    --cell-padding-mobile: 0.25rem;
+    --card-padding-y: 0.5rem;
+    --card-padding-x: 0.8rem;
+    --cell-subtitle-font: 0.95rem;
+    --cell-subtitle-font-mobile: 0.85rem;
+    --cell-subject-font: 1.2rem;
+    --cell-subject-font-mobile: 1rem;
+    --meta-margin: 0.3rem;
+    --subtitle-margin: 0.5rem;
+    --control-padding: 0.5rem;
+    --control-padding-x: 1rem;
+}
+
+/* Size tokens for calc() refactor */
+:root {
+    --app-max-width: 1400px;
+    --app-margin-top: 36px;
+    --app-padding: 20px;
+    --header-gap: 1.6rem;
+    --header-padding-bottom: 1.2rem;
+    --h1-size: 2.2rem;
+    --controls-gap: 0.8rem;
+    --controls-margin-top: 0.6rem;
+    --control-padding-y: 0.5rem;
+    --control-font-size: 1.2rem;
+    --mobile-app-padding: 8px;
+    --table-min-width-mobile: 720px;
+    --thead-padding: 0.8rem;
+    --day-col-width: 6.6rem;
+    --day-col-width-px: 60px;
+    --sbj-faculty-margin-top: 0.6rem;
+    --sbj-row-hover-translate: 2px;
+    --faculty-max-height: 6rem;
+    --mobile-cell-padding: 0.25rem;
+    --mobile-cell-height: 44px;
+    --mobile-day-col-width-px: 46px;
+    --table-wrap-padding-bottom: 1rem;
+    --body-padding-top: 2rem;
+    --body-padding-bottom: 24rem;
+}
+
+/* Basic element normalisation (small subset) */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+    /* 1rem = 10px for easier scaling */
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-content);
+    background-color: var(--color-bg-primary);
+    color: var(--color-tx-normal);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    padding: calc(var(--body-padding-top)) 0 calc(var(--body-padding-bottom));
+    overflow-x: hidden;
+    font-size: var(--font-base);
+    line-height: var(--line-height);
+}
+
+/* App container should not show white; inherit page background */
+.app {
+    background: transparent;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: var(--image-radius)
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 2em;
+    margin: 0.67em 0
+}
+
+small {
+    font-size: 80%
+}
+
+/* The theme helper classes the original site uses */
+:root {
+    --flexoki-black: #100F0F;
+    --flexoki-paper: #FFFCF0
+}
+
+:root,
+.theme-light {
+    --color-bg-primary: var(--flexoki-paper);
+    --color-bg-secondary: var(--flexoki-50);
+    --color-tx-normal: var(--flexoki-black);
+    --color-tx-muted: var(--flexoki-600);
+    --color-ui-normal: var(--flexoki-100);
+    --color-ui-hover: var(--flexoki-150);
+    --color-ui-active: var(--flexoki-200);
+    --color-selection: rgba(187, 220, 206, 0.3);
+    --color-action: var(--flexoki-cyan-600);
+}
+
+.theme-dark {
+    --color-bg-primary: var(--flexoki-black);
+    --color-bg-secondary: var(--flexoki-950);
+    --color-tx-normal: var(--flexoki-200);
+    --color-tx-muted: var(--flexoki-500);
+    --color-ui-normal: var(--flexoki-900);
+    --color-ui-hover: var(--flexoki-850);
+    --color-ui-active: var(--flexoki-800);
+    --color-selection: rgba(30, 95, 91, 0.3);
+    --color-action: var(--flexoki-cyan-400);
+}
+
+/* Selection */
+::selection {
+    background: var(--color-selection)
+}
+
+/* App and layout styles moved from styles.css to match timetable UI */
+.app {
+    max-width: calc(var(--app-max-width));
+    margin: calc(var(--app-margin-top)) auto;
+    padding: calc(var(--app-padding))
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: calc(var(--header-gap));
+    padding-bottom: calc(var(--header-padding-bottom));
+}
+
+.title-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+h1 {
+    margin: 0;
+    font-size: calc(var(--h1-size));
+    font-weight: 600;
+}
+
+.subtitle {
+    margin: var(--subtitle-margin) 0 0 0;
+    font-size: calc(var(--font-base) - 0.5rem);
+    color: var(--color-tx-muted);
+    font-weight: 400;
+}
+
+.meta-heading {
+    margin: 0.3rem 0 0 0;
+    font-size: 1.2rem;
+    color: var(--color-tx-muted);
+    font-weight: 500;
+}
+
+/* Controls */
+#controls {
+    display: flex;
+    gap: calc(var(--controls-gap));
+    align-items: center;
+    margin-top: calc(var(--controls-margin-top));
+    flex-wrap: wrap;
+}
+
+/* Control buttons */
+.control-button {
+    padding: calc(var(--control-padding-y)) calc(var(--control-padding-x));
+    background: var(--color-ui-normal);
+    border: 1px solid var(--color-ui-normal);
+    border-radius: 4px;
+    color: var(--color-tx-normal);
+    cursor: pointer;
+    font-size: calc(var(--control-font-size));
+    font-family: inherit;
+    transition: background 0.2s, color 0.2s;
+}
+
+.control-button:hover {
+    background: var(--color-ui-hover);
+}
+
+.control-button.active {
+    background: var(--color-action);
+    color: white;
+    border-color: var(--color-action);
+}
+
+@media (max-width:640px) {
+    #controls {
+        flex-wrap: wrap;
+        gap: 8px
+    }
+
+    /* Make header stack vertically on mobile */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    /* Make header-right buttons wrap on mobile */
+    #header-right {
+        flex-wrap: wrap;
+        gap: 0.5rem !important;
+    }
+
+    .app {
+        padding: calc(var(--mobile-app-padding))
+    }
+
+    table.frametimetable th,
+    table.frametimetable td {
+        padding: 0.5rem;
+        font-size: 1rem;
+        white-space: normal;
+        /* allow wrapping on small screens */
+        text-overflow: clip;
+        max-width: none;
+    }
+
+    /* Make timetable horizontally scrollable on small screens */
+    .table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Ensure table can overflow and allow horizontal scroll */
+    table.frametimetable {
+        min-width: calc(var(--table-min-width-mobile));
+        /* adjust if you need more/less columns visible */
+        table-layout: fixed;
+    }
+
+    /* Tighter cell sizing on mobile */
+    :root {
+        --cell-min-width: 6.8rem;
+        --cell-max-width: 12rem;
+        --cell-min-height: 3.6rem;
+        --cell-max-height: 6rem;
+    }
+
+    .sbj_row {
+        padding: 8px 10px;
+        max-height: calc(var(--cell-max-height) - 1rem);
+    }
+
+    th.day-col,
+    td.day-col {
+        min-width: calc(var(--day-col-width-px));
+        width: calc(var(--day-col-width-px));
+        text-align: left;
+    }
+}
+
+/* Table wrapper for mobile */
+.table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch
+}
+
+/* Frametable styles (Flexoki-based tokens) */
+table.frametimetable {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    /* distribute columns evenly and respect max-widths */
+    /* transparent background so it inherits page background */
+    background: transparent;
+    border-radius: 0;
+    /* make table corners square */
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(16, 16, 16, 0.12);
+    border: 1px solid var(--color-ui-normal);
+}
+
+table.frametimetable th,
+table.frametimetable td {
+    border: 1px solid var(--color-ui-normal);
+    padding: var(--cell-padding);
+    vertical-align: top;
+    text-align: center;
+    height: var(--cell-height);
+    overflow: hidden;
+    /* ensure content does not expand cell */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* keep a single-line card; allow ellipsis */
+    max-width: var(--cell-max-width);
+    border-radius: 0;
+    font-size: calc(var(--font-base) - 0.5rem);
+    /* prevent inner cells from showing rounded corners */
+}
+
+/* Also ensure header's first and last logical cells don't show a separate corner */
+table.frametimetable thead th:first-child,
+table.frametimetable th:first-child,
+table.frametimetable td:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+table.frametimetable thead th:last-child,
+table.frametimetable th:last-child,
+table.frametimetable td:last-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* The left-day sticky column should be compact but able to wrap if needed */
+th.day-col,
+td.day-col {
+    min-width: calc(var(--day-col-width));
+    /* a stable width for the day label */
+    white-space: normal;
+    text-align: left;
+}
+
+/* Table header (not sticky) */
+table.frametimetable thead th {
+    position: static;
+    /* do not stick the header */
+    background: rgba(0, 0, 0, 0.04);
+    color: var(--color-tx-normal);
+    font-weight: 700;
+    font-size: 1.2rem;
+    /* 12px */
+    padding: calc(var(--thead-padding));
+    border-bottom: 1px solid var(--color-ui-normal);
+}
+
+/* Keep all slot header/cell sizes consistent (except the left-day column) */
+table.frametimetable th.slot-header,
+table.frametimetable td.slot-cell {
+    min-width: var(--cell-min-width);
+    max-width: var(--cell-max-width);
+    min-height: var(--cell-min-height);
+    max-height: var(--cell-max-height);
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+/* Day column retains its own compact size */
+th.day-col,
+td.day-col {
+    min-width: calc(var(--day-col-width));
+    width: calc(var(--day-col-width));
+    white-space: normal;
+}
+
+/* Ensure inner subject cards fit comfortably inside the cell sizing */
+table.frametimetable td.slot-cell .sbj_row {
+    max-height: calc(var(--cell-max-height) - 1.2rem);
+    min-height: calc(var(--cell-min-height) - 0.6rem);
+    overflow: hidden;
+}
+
+/* Day column */
+th.day-col,
+td.day-col {
+    background: var(--color-bg-primary);
+    width: calc(var(--day-col-width));
+    /* fixed width for the day column so other columns get distributed */
+    min-width: calc(var(--day-col-width));
+    white-space: normal;
+    text-align: left;
+}
+
+/* Ensure the left column keeps a consistent background in both header and body */
+table.frametimetable thead th.day-col,
+table.frametimetable tbody td.day-col {
+    background: var(--color-bg-primary);
+    /* add a thin right border to separate from the schedule grid */
+    border-right: 1px solid var(--color-ui-normal);
+    width: calc(var(--day-col-width-px));
+    min-width: calc(var(--day-col-width-px));
+}
+
+/* Header-only tweaks for the day column */
+table.frametimetable thead th.day-col {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.6rem;
+    vertical-align: middle;
+}
+
+table.frametimetable thead th.day-col abbr {
+    text-decoration: none;
+    border: none;
+    cursor: default;
+}
+
+.break-slot {
+    background: rgba(0, 0, 0, 0.02);
+    color: var(--color-tx-muted)
+}
+
+small,
+.small {
+    font-size: var(--font-small);
+    line-height: 1.4;
+}
+
+.small.no-schedule {
+    color: var(--color-tx-muted);
+    opacity: 0.9;
+}
+
+/* Subject cards */
+.sbj_row {
+    background: var(--color-ui-normal);
+    border: 1px solid var(--color-ui-normal);
+    box-shadow: 0 4px 10px rgba(2, 6, 23, 0.06);
+    border-radius: 0.5rem;
+    padding: var(--card-padding-y) var(--card-padding-x);
+    margin: 0;
+    height: 100%;
+    /* limit card height to avoid very tall cells */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 160ms ease, box-shadow 160ms ease, background-color 180ms ease, border-color 180ms ease, max-height 200ms ease;
+    min-width: 0;
+    overflow: hidden;
+    /* allow the card to shrink inside constrained cells */
+    max-width: 100%;
+}
+
+.sbj_row .subject {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sbj_row .faculty {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sbj_row:focus,
+.sbj_row:focus-visible {
+    outline: 3px solid rgba(63, 81, 181, 0.25);
+    outline-offset: 2px
+}
+
+.sbj_row:hover {
+    transform: translateY(calc(var(--sbj-row-hover-translate) * -1));
+    box-shadow: 0 10px 20px rgba(16, 16, 16, 0.08);
+}
+
+/* When teachers are shown globally, allow cells to expand */
+.show-teachers .sbj_row {
+    /* reserved for global teacher display tweaks */
+}
+
+.sbj_row .subject {
+    display: block;
+    font-weight: 700;
+    font-size: var(--cell-subject-font);
+    line-height: 1.1;
+    color: var(--color-tx-normal);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.sbj_row .faculty {
+    color: var(--color-tx-muted);
+    font-size: var(--cell-subtitle-font);
+    font-weight: 500;
+    margin-top: calc(var(--sbj-faculty-margin-top));
+    /* start hidden by default (shown on hover or when .show-teachers is set) */
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 160ms ease, max-height 160ms ease;
+}
+
+/* Reveal teachers on row hover or focus */
+.sbj_row:hover .faculty,
+.sbj_row:focus .faculty,
+.sbj_row:focus-visible .faculty {
+    opacity: 1;
+    max-height: calc(var(--faculty-max-height));
+}
+
+/* Show teachers globally when the user enables the toggle */
+.show-teachers .faculty {
+    opacity: 1;
+    max-height: calc(var(--faculty-max-height));
+}
+
+/* Prevent rounded-subject cards from creating visible curves at the table edges
+   by removing corner radii on cells that sit on the outer edges of the table. */
+table.frametimetable td:first-child .sbj_row,
+table.frametimetable th:first-child .sbj_row {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+table.frametimetable td:last-child .sbj_row,
+table.frametimetable th:last-child .sbj_row {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* If you later add box-shadows on .sbj_row they may overflow; clip cells at the table edge */
+table.frametimetable td:first-child,
+table.frametimetable th:first-child,
+table.frametimetable td:last-child,
+table.frametimetable th:last-child {
+    overflow: hidden;
+}
+
+/* Dark theme tweaks */
+.theme-dark table.frametimetable {
+    background: var(--color-bg-secondary);
+    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0.03)
+}
+
+.theme-dark table.frametimetable thead th {
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--color-tx-normal)
+}
+
+.theme-dark th.day-col,
+.theme-dark td.day-col {
+    background: var(--color-bg-secondary)
+}
+
+/* Responsive adjustments */
+@media (max-width:640px) {
+
+    /* App layout tweaks for narrow screens */
+    .app {
+        padding: calc(var(--mobile-app-padding));
+        margin: 1.2rem 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 0.6rem;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .sbj_row .subject {
+        font-size: var(--cell-subject-font-mobile);
+        line-height: 1.1;
+    }
+
+    .notes {
+        font-size: 1.05rem;
+        max-width: 100%;
+    }
+
+    /* Reduce the excessive page bottom padding on small screens */
+    body {
+        padding-bottom: 6rem;
+    }
+
+    /* Make table cells wrap and reduce padding so content fits */
+    table.frametimetable th,
+    table.frametimetable td {
+        padding: calc(var(--mobile-cell-padding));
+        font-size: 1.2rem;
+        white-space: normal;
+        /* allow wrapping on small screens */
+        text-overflow: clip;
+        max-width: none;
+        height: calc(var(--mobile-cell-height));
+    }
+
+    .sbj_row {
+        padding: 0.3rem 0.5rem;
+        margin: 0;
+        height: 100%;
+        min-height: auto;
+        max-height: none;
+        /* keep cells compact on small screens */
+    }
+
+    /* Keep day column compact but readable */
+    th.day-col,
+    td.day-col {
+        min-width: calc(var(--mobile-day-col-width-px));
+        width: calc(var(--mobile-day-col-width-px));
+        text-align: left;
+    }
+
+    /* Make the table wrapper allow comfortable horizontal scrolling
+       and avoid adding extra page padding */
+    .table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: calc(var(--table-wrap-padding-bottom));
+        margin-left: -8px;
+        margin-right: -8px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    /* Reduce heavy shadows for mobile to avoid large visual blocks */
+    table.frametimetable {
+        box-shadow: none;
+        border-radius: 6px;
+    }
+
+    /* Slightly adjust faculty display for compactness */
+    .sbj_row .faculty {
+        display: block;
+        max-height: none;
+        font-size: var(--cell-subtitle-font-mobile);
+        font-weight: 500;
+    }
+
+    /* If a helper class was used to intentionally make tables wider, ensure it
+       doesn't force overflow beyond the horizontal scroller on mobile */
+    .table-mobile-wide table {
+        width: auto;
+    }
+}
+
+/* Login styles */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: var(--flexoki-paper);
+    font-family: var(--font-family);
+}
+
+.rabbit-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: var(--flexoki-black);
+    margin-bottom: 0.5rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: var(--flexoki-600);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+}
+
+.login-form input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--flexoki-300);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-family: var(--font-family);
+}
+
+.login-form button {
+    padding: 0.75rem;
+    background-color: var(--flexoki-orange-500);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-family: var(--font-family);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.login-form button:hover {
+    background-color: var(--flexoki-orange-600);
+}
