@@ -160,6 +160,14 @@ function savePref(key, val) {
     try { localStorage.setItem('timetable.' + key, JSON.stringify(val)); } catch (e) { }
 }
 
+// Remove any existing action bars (day or table) to avoid duplicates when
+// toggling between views or repeatedly re-rendering the timetable.
+function cleanupActionBars() {
+    try {
+        document.querySelectorAll('.day-actions, .table-action-bar, #table-action-bar').forEach(el => el.remove());
+    } catch (e) { /* ignore */ }
+}
+
 // Helper to restore main timetable view after comparison or other overlays
 function backToMyTimetable() {
     comparisonData = null;
@@ -170,8 +178,13 @@ function backToMyTimetable() {
             initPrefControls();
             attachTimetableButtonListeners();
             applyFilters();
-                // Auto-scroll to today's day when in day view
-                scrollToToday();
+            // Transform stacked day blocks into a horizontal scroller, then init and scroll to today (day view only)
+            transformDayViewToScroller();
+            initDayScroller();
+            moveDayActionsOutside();
+            scrollToToday();
+            // Ensure action bar visibility is updated after view switch
+
         }
     }
 }
@@ -276,8 +289,12 @@ function initPrefControls() {
                 initPrefControls();
                 attachTimetableButtonListeners();
                 applyFilters();
-                // Auto-scroll to today's day when switching to day view
+                // Transform stacked day blocks into a horizontal scroller, init it and scroll to today (day view only)
+                transformDayViewToScroller();
+                initDayScroller();
+                moveDayActionsOutside();
                 scrollToToday();
+
             }
         });
     }
@@ -565,6 +582,12 @@ function showCompareDialog() {
                 initPrefControls();
                 attachTimetableButtonListeners();
                 applyFilters();
+                // Transform stacked day blocks into a horizontal scroller, init it and scroll to today (day view only)
+                transformDayViewToScroller();
+                initDayScroller();
+                moveDayActionsOutside();
+                scrollToToday();
+
             }
 
         } catch (error) {
@@ -941,6 +964,8 @@ function renderDayView(data, comparisonData = null) {
     if (!data || !data.schedule) return '<h1>No timetable data available</h1>';
     const schedule = (data.schedule || []).filter(day => day.day !== 'Saturday');
     let html = '<div class="day-view">';
+    // Horizontal scroller for day view (show current day and allow left/right scrolling)
+    html += '<div class="day-scroller"><div class="day-scroller-track">';
     for (const day of schedule) {
         html += `<div class="day-block">`;
         html += `<div class="day-header">${escapeHtml(day.day)}</div>`;
@@ -1055,8 +1080,8 @@ function renderDayView(data, comparisonData = null) {
     }
     html += '</div>';
 
-    // Action buttons (stacked in day-view for easy tapping)
-    html += '<div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 1rem;">';
+    // Action buttons (stacked in day-view for easy tapping) — mark with `.day-actions` so we can move them outside the scroller
+    html += '<div class="day-actions" style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 1rem;">';
     if (comparisonData) html += '<button id="back-to-my" onclick="backToMyTimetable()" style="flex:1; padding: 0.75rem; background: #6c757d; color: white; border: none; border-radius: 6px; cursor: pointer;">Back to My Timetable</button>';
     html += '<button id="compare-btn" style="flex:1; padding: 0.75rem; background: #007bff; color: white; border: none; border-radius: 6px; cursor: pointer;">Compare</button>';
     html += '<button id="export-ical" class="control-button" style="flex:1; padding: 0.75rem; background: #28a745; color: white; border: none; border-radius: 6px; cursor: pointer;">Add to Cal</button>';
@@ -1071,19 +1096,148 @@ function scrollToToday() {
     try {
         const view = (UI_PREFS && UI_PREFS.viewMode) || loadPref('viewMode', 'table');
         if (view !== 'day') return;
-        const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
-        const headers = Array.from(document.querySelectorAll('.day-header'));
-        const match = headers.find(h => h.textContent && h.textContent.trim().toLowerCase() === today.toLowerCase());
-        if (match) {
-            match.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+        const today = (window.__FORCE_TODAY && String(window.__FORCE_TODAY).trim()) || new Date().toLocaleDateString('en-US', { weekday: 'long' });
+
+        // If scroller exists, prefer scrolling the scroller horizontally to the matching day block
+        const scroller = document.querySelector('.day-scroller');
+        if (scroller) {
+            const slides = Array.from(scroller.querySelectorAll('.day-block'));
+            const found = slides.find(s => {
+                const h = s.querySelector('.day-header');
+                return h && String(h.textContent || '').toLowerCase().trim() === String(today).toLowerCase().trim();
+            });
+            if (found) {
+                // Use smooth horizontal scroll to align to start
+                found.scrollIntoView({ behavior: 'smooth', inline: 'start' });
+                return;
+            }
         }
+
+        // Fallback: scroll header elements in document
+        const headers = Array.from(document.querySelectorAll('.day-header'));
+        const match = headers.find(h => h.textContent && h.textContent.trim().toLowerCase() === String(today).toLowerCase());
+        if (match) match.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+    } catch (e) { /* ignore */ }
+}
+
+// Convert stacked day-blocks into a horizontal scroller container; idempotent
+function transformDayViewToScroller() {
+    try {
+        const dayView = document.querySelector('.day-view');
+        if (!dayView) return;
+        if (dayView.querySelector('.day-scroller')) return; // already transformed
+        const dayBlocks = Array.from(dayView.querySelectorAll(':scope > .day-block'));
+        if (!dayBlocks.length) return;
+        const scroller = document.createElement('div'); scroller.className = 'day-scroller';
+        const track = document.createElement('div'); track.className = 'day-scroller-track';
+        scroller.appendChild(track);
+        // Insert scroller before the first day block so action buttons remain after
+        dayView.insertBefore(scroller, dayBlocks[0]);
+        // Move each block into track
+        dayBlocks.forEach(b => track.appendChild(b));
+        // If day actions exist inside day-view, move them outside so they are not clipped by the scroller
+        const actions = dayView.querySelector('.day-actions');
+        if (actions) {
+            // Place actions directly after the newly created scroller so they are clearly outside it
+            if (scroller && scroller.parentNode) {
+                scroller.parentNode.insertBefore(actions, scroller.nextSibling);
+            } else if (dayView.parentNode) {
+                dayView.parentNode.insertBefore(actions, dayView.nextSibling);
+            }
+        }
+        // Also ensure actions are outside the scroller entirely by moving them after the #content node
+        try {
+            const content = document.getElementById('content');
+            if (content && content.parentNode && actions) content.parentNode.insertBefore(actions, content.nextSibling);
+        } catch (e) { /* ignore */ }
+    } catch (e) { /* ignore */ }
+}
+
+// Force `.day-actions` directly after `#content` so it never sits inside a scroller
+function moveDayActionsOutside() {
+    try {
+        const actions = document.querySelector('.day-actions');
+        if (!actions) return;
+        const content = document.getElementById('content');
+        if (content && content.parentNode) content.parentNode.insertBefore(actions, content.nextSibling);
+        else document.body.appendChild(actions);
+    } catch (e) { /* ignore */ }
+}
+
+// Initialize native horizontal scroller behaviour (sets sizes, scroll-snap & observation)
+function initDayScroller() {
+    try {
+        const scroller = document.querySelector('.day-scroller');
+        if (!scroller) return;
+        const slides = Array.from(scroller.querySelectorAll('.day-block'));
+        if (!slides.length) return;
+
+        const tabs = Array.from(document.querySelectorAll('.day-tab'));
+        function setActive(day) {
+            tabs.forEach(t => {
+                if (t.dataset.day && t.dataset.day.toLowerCase() === day.toLowerCase()) t.classList.add('active');
+                else t.classList.remove('active');
+            });
+        }
+
+        const todayName = (window.__FORCE_TODAY && String(window.__FORCE_TODAY).trim()) || new Date().toLocaleDateString('en-US', { weekday: 'long' });
+        const foundIndex = Math.max(0, slides.findIndex(s => (s.querySelector('.day-header') || {}).textContent && String(s.querySelector('.day-header').textContent || '').toLowerCase().trim() === String(todayName).toLowerCase().trim()));
+
+        // Resize-aware sizing: set slides to scroller width
+        function setSizes() {
+            const w = scroller.clientWidth;
+            slides.forEach(s => {
+                s.style.flex = '0 0 ' + w + 'px';
+                s.style.maxWidth = w + 'px';
+                s.style.scrollSnapAlign = 'start';
+            });
+            // ensure scroller is at proper offset for current index
+            scroller.scrollLeft = foundIndex * scroller.clientWidth;
+        }
+
+        // Observe which slide is most visible to update tabs
+        if ('IntersectionObserver' in window) {
+            const obs = new IntersectionObserver((entries) => {
+                entries.forEach(en => {
+                    if (en.isIntersecting) {
+                        const h = en.target.querySelector('.day-header');
+                        if (h && h.textContent) setActive(h.textContent.trim());
+                    }
+                });
+            }, { root: scroller, threshold: 0.6 });
+            slides.forEach(s => obs.observe(s));
+        }
+
+        // Expose helper
+        window.__dayScroller = {
+            goToDay(name) {
+                const normalized = String(name || '').toLowerCase().trim();
+                const found = slides.find(s => (s.querySelector('.day-header') || {}).textContent && String(s.querySelector('.day-header').textContent || '').toLowerCase().trim() === normalized);
+                if (found) found.scrollIntoView({ behavior: 'smooth', inline: 'start' });
+            }
+        };
+
+        // init sizes and position
+        setSizes();
+        window.addEventListener('resize', setSizes);
+
+        // Ensure actions are outside scroller after sizing
+        try { moveDayActionsOutside(); } catch (e) { /* ignore */ }
+
     } catch (e) { /* ignore */ }
 }
 
 function renderCurrentTimetable(data, comparisonData = null) {
+    // Remove any existing floating action bars to avoid duplicates
+    cleanupActionBars();
+
     // Determine which view to show: 'day' or 'table' (no auto mode)
     const view = (UI_PREFS && UI_PREFS.viewMode) || loadPref('viewMode', 'table');
-    if (view === 'day') return renderDayView(data, comparisonData);
+    if (view === 'day') {
+        const html = renderDayView(data, comparisonData);
+        // After rendering, transform into scroller and init scroller in the caller
+        return html;
+    }
     return renderTimetable(data, comparisonData);
 }
 
@@ -1564,8 +1718,8 @@ function renderTimetable(data, comparisonData = null) {
     html += '</tbody></table>';
     html += '</div>';
 
-    // Add action buttons after the table
-    html += '<div style="display: flex; gap: 1rem; justify-content: flex-end; margin-top: 2rem; flex-wrap: wrap;">';
+    // Add action buttons after the table (stable container so we can show/hide or remove it reliably)
+    html += '<div id="table-action-bar" class="table-action-bar" style="display: flex; gap: 1rem; justify-content: flex-end; margin-top: 2rem; flex-wrap: wrap;">';
     if (comparisonData) {
         html += '<button id="back-to-my" onclick="backToMyTimetable()" style="padding: 0.75rem 1.5rem; background: #6c757d; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem; font-weight: 500;">Back to My Timetable</button>';
     }
@@ -1633,9 +1787,14 @@ function initTimetableApp() {
                     if (loading) loading.style.display = 'none';
                     content.innerHTML = renderCurrentTimetable(data, comparisonData);
                     initPrefControls();
+                    attachTimetableButtonListeners();
                     applyFilters();
-                    // Auto-scroll to today's day when in day view
+                    // Transform into horizontal scroller, init it and scroll to today's day (day view only)
+                    transformDayViewToScroller();
+                    initDayScroller();
+                    moveDayActionsOutside();
                     scrollToToday();
+
                     return;
                 } catch (e) {
                     console.error('Failed to parse cached timetable:', e);
@@ -1683,7 +1842,13 @@ function initTimetableApp() {
                     if (loading) loading.style.display = 'none';
                     content.innerHTML = renderCurrentTimetable(data, comparisonData);
                     initPrefControls();
+                    attachTimetableButtonListeners();
                     applyFilters();
+                    // Transform into horizontal scroller if day view, init it and scroll to today
+                    transformDayViewToScroller();
+                    initDayScroller();
+                    moveDayActionsOutside();
+                    scrollToToday();
 
                     // No auto-switching: user chooses Day or Table explicitly (auto mode removed)
                 })

@@ -391,6 +391,9 @@ h1 {
         padding: 0.6rem;
         margin-bottom: 0.8rem;
         background: var(--color-bg-secondary);
+        /* Ensure internal content is clipped to avoid visual overflow on the right edge */
+        overflow: hidden;
+        position: relative;
     }
 
     .day-header {
@@ -407,6 +410,8 @@ h1 {
         padding: 0.35rem 0;
         position: relative;
         border-bottom: 1px dashed rgba(0, 0, 0, 0.04);
+        /* Clip any overflowing children so content doesn't leak into the page gutter */
+        overflow: hidden;
     }
 
     .slot-item:last-child {
@@ -859,6 +864,51 @@ table.frametimetable th:last-child {
     .table-mobile-wide table {
         width: auto;
     }
+}
+
+/* Native horizontal scroller for day view */
+.day-scroller {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+}
+
+/* Day view action buttons when moved outside the scroller */
+.day-actions {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    justify-content: flex-start;
+}
+
+.day-actions {
+    position: relative;
+    z-index: 1400;
+    /* ensure visible above scroller overlays */
+}
+
+.day-actions .control-button,
+.day-actions button {
+    min-width: 120px;
+}
+
+
+.day-scroller-track {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+}
+
+.day-scroller .day-block {
+    flex: 0 0 100%;
+    min-width: 100%;
+    scroll-snap-align: start;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 /* Login styles */
