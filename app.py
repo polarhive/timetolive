@@ -147,6 +147,45 @@ def send_timetable_to_github_dispatch(filename: str, timetable: dict) -> bool:
         logger.debug("GITHUB_REPO or GITHUB_TRIGGER_TOKEN not set; skipping dispatch")
         return False
 
+    # Use raw.githubusercontent URL only (public repo). If we cannot reliably
+    # fetch a 200/404, do NOT dispatch -- honor 'raw or don't'.
+    owner, repo_name = repo.split("/", 1) if "/" in repo else (repo, "")
+    raw_url = f"https://raw.githubusercontent.com/{owner}/{repo_name}/main/static/timetables/{filename}.json"
+    try:
+        logger.info("Checking raw URL: %s", raw_url)
+        r = requests.get(raw_url, timeout=10)
+        logger.info("Raw URL response: %s", r.status_code)
+        if r.status_code == 200:
+            try:
+                existing_timetable = r.json()
+            except Exception:
+                logger.exception("Failed to parse JSON from raw URL; will not dispatch")
+                return False
+
+            if existing_timetable == timetable:
+                logger.info(
+                    "Timetable %s in repo is unchanged; skipping dispatch", filename
+                )
+                return True
+            else:
+                logger.info(
+                    "Timetable %s in repo differs; dispatching update", filename
+                )
+                should_dispatch = True
+        elif r.status_code == 404:
+            logger.info("Timetable %s not present at raw URL; will dispatch", filename)
+            should_dispatch = True
+        else:
+            logger.warning(
+                "Raw URL fetch returned %s;",
+                r.status_code,
+            )
+            return False
+    except Exception:
+        logger.exception("Error fetching raw URL;")
+        return False
+
+    # Proceed to trigger repository_dispatch event
     url = f"https://api.github.com/repos/{repo}/dispatches"
     payload = {
         "event_type": "new_timetable",
@@ -159,13 +198,14 @@ def send_timetable_to_github_dispatch(filename: str, timetable: dict) -> bool:
 
     try:
         resp = requests.post(url, json=payload, headers=headers, timeout=10)
+        logger.info(f"GitHub dispatch response: {resp.status_code} {resp.text}")
         if resp.status_code in (204, 201):
             logger.info(f"Dispatched timetable {filename} to GitHub repo {repo}")
             return True
         else:
             logger.warning(f"GitHub dispatch failed: {resp.status_code} {resp.text}")
             return False
-    except Exception as e:
+    except Exception:
         logger.exception("Failed to send repository_dispatch to GitHub")
         return False
 
@@ -194,9 +234,6 @@ def homepage():
 @app.route("/static/<path:filename>")
 def static_files(filename):
     return send_from_directory("static", filename)
-
-
-
 
 
 @app.route("/api/timetable", methods=["POST"])
@@ -239,53 +276,27 @@ def api_timetable():
             # When not saved locally, optionally dispatch to GitHub and
             # still return the fetched timetable JSON to the client.
 
-            # Check if the file already exists locally and is the same
-            filepath = f"static/timetables/{filename}.json"
+            # Delegate the dispatch decision to the dispatcher which will
+            # compare the provided timetable against the repository file and
+            # only trigger a repository_dispatch if the remote file is missing
+            # or differs.
+            gh_repo = os.environ.get("GITHUB_REPO")
+            gh_token = os.environ.get("GITHUB_TRIGGER_TOKEN")
             logger.info(
-                f"Checking existing file: {filepath}, exists: {os.path.exists(filepath)}"
+                "GITHUB_REPO present=%s, GITHUB_TRIGGER_TOKEN present=%s",
+                bool(gh_repo),
+                bool(gh_token),
             )
-            should_dispatch = True
-            if os.path.exists(filepath):
+            if gh_repo and gh_token:
                 try:
-                    with open(filepath, "r", encoding="utf-8") as f:
-                        existing_timetable = json.load(f)
-                    are_equal = existing_timetable == timetable_data
-                    logger.info(f"Timetables equal: {are_equal}")
-                    if not are_equal:
-                        logger.info(
-                            f"Existing timetable keys: {list(existing_timetable.keys())}"
-                        )
-                        logger.info(
-                            f"New timetable keys: {list(timetable_data.keys())}"
-                        )
-                        # Check meta section
-                        if existing_timetable.get("meta") != timetable_data.get("meta"):
-                            logger.info("Meta sections differ")
-                        if existing_timetable.get("schedule") != timetable_data.get(
-                            "schedule"
-                        ):
-                            logger.info("Schedule sections differ")
-                    if are_equal:
-                        logger.info(
-                            f"Timetable {filename} is unchanged; skipping dispatch"
-                        )
-                        should_dispatch = False
-                except Exception as e:
-                    logger.exception(
-                        f"Failed to read existing timetable file {filepath}"
-                    )
-                    # Continue with dispatch anyway
-
-            if should_dispatch:
-                try:
-                    gh_repo = os.environ.get("GITHUB_REPO")
-                    gh_token = os.environ.get("GITHUB_TRIGGER_TOKEN")
-                    if gh_repo and gh_token:
-                        send_timetable_to_github_dispatch(filename, timetable_data)
+                    sent = send_timetable_to_github_dispatch(filename, timetable_data)
+                    logger.info("Dispatch sent=%s", sent)
                 except Exception:
                     logger.exception(
                         "Error while attempting to dispatch timetable to GitHub"
                     )
+            else:
+                logger.info("GitHub dispatch not configured; skipping")
 
             response_data = timetable_data
         return jsonify(response_data)

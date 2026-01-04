@@ -5,6 +5,7 @@ This module contains functions for parsing HTML and rendering timetables.
 """
 
 import logging
+
 # Use root logger so messages flow to Flask's console via root configuration
 logger = logging.getLogger()
 import json

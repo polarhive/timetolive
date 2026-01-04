@@ -7,6 +7,7 @@ This module contains the authentication and CSRF handling logic.
 from __future__ import annotations
 
 import logging
+
 # Use root logger so messages flow to Flask's console via root configuration
 logger = logging.getLogger()
 import time
