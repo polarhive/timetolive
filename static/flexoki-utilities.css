@@ -236,13 +236,12 @@ h1 {
     border-color: var(--color-action);
 }
 
-@media (max-width:640px) {
+@media (min-width:315px) {
     #controls {
         flex-wrap: wrap;
         gap: 8px
     }
 
-    /* Make header stack vertically on mobile */
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -264,15 +263,14 @@ h1 {
         padding: 0.5rem;
         font-size: 1rem;
         white-space: normal;
-        /* allow wrapping on small screens */
         text-overflow: clip;
         max-width: none;
     }
 
-    /* Make timetable horizontally scrollable on small screens */
     .table-wrap {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
+        padding-bottom: var(--table-wrap-padding-bottom);
     }
 
     /* Ensure table can overflow and allow horizontal scroll */
@@ -301,7 +299,143 @@ h1 {
         width: calc(var(--day-col-width-px));
         text-align: left;
     }
+
+    /* Improve subject card wrapping and reduce density */
+    .sbj_row .subject,
+    .sbj_row .faculty {
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .sbj_row .subject {
+        font-size: var(--cell-subject-font-mobile);
+        line-height: 1.1;
+    }
+
+    .sbj_row .faculty {
+        font-size: var(--cell-subtitle-font-mobile);
+        margin-top: 0.25rem;
+        color: var(--color-tx-muted);
+    }
+
+    /* Reduce card padding and radius on mobile */
+    .sbj_row {
+        padding: var(--mobile-cell-padding);
+        border-radius: 0.4rem;
+    }
+
+    /* Make action buttons stack full-width on small screens */
+    .app>.table-wrap+div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        align-items: stretch;
+    }
+
+    .app>.table-wrap+div button {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Slightly smaller header text on mobile */
+    h1 {
+        font-size: calc(var(--h1-size) - 0.6rem);
+    }
+
+    /* Compact meta heading */
+    .meta-heading {
+        font-size: 1rem;
+        color: var(--color-tx-muted);
+    }
+
+    /* Show compact per-cell time labels on narrow screens */
+    .slot-time {
+        display: block;
+        font-size: var(--font-smaller);
+        color: var(--color-tx-muted);
+    }
+
+    /* Day view styles (stacked per day) */
+    .day-view {
+        display: block;
+        margin: 0.4rem 0;
+        position: relative;
+        /* keep below header */
+        z-index: 1;
+    }
+
+    /* Ensure header and control buttons sit above the day/table content */
+    header {
+        position: relative;
+        z-index: 1200;
+    }
+
+    #controls {
+        position: relative;
+        z-index: 1200;
+    }
+
+    /* Ensure control buttons always accept pointer events */
+    .control-button {
+        pointer-events: auto;
+    }
+
+    /* Make free overlays decorative only (don't block clicks to header/controls) */
+    .free-overlay {
+        pointer-events: none;
+    }
+
+    .day-block {
+        border: 1px solid var(--color-ui-normal);
+        border-radius: 8px;
+        padding: 0.6rem;
+        margin-bottom: 0.8rem;
+        background: var(--color-bg-secondary);
+    }
+
+    .day-header {
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-bottom: 0.4rem;
+        color: var(--color-tx-normal);
+    }
+
+    .slot-item {
+        display: flex;
+        gap: 0.6rem;
+        align-items: flex-start;
+        padding: 0.35rem 0;
+        position: relative;
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.04);
+    }
+
+    .slot-item:last-child {
+        border-bottom: none;
+    }
+
+    .slot-item-time {
+        width: 86px;
+        min-width: 64px;
+        color: var(--color-tx-muted);
+        font-size: var(--font-smaller);
+        text-align: right;
+        padding-right: 0.6rem;
+    }
+
+    .slot-item-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .slot-item .sbj_row {
+        margin: 0;
+        padding: 0.45rem;
+        border-radius: 6px;
+    }
 }
+
 
 /* Table wrapper for mobile */
 .table-wrap {
@@ -451,6 +585,11 @@ small,
     line-height: 1.4;
 }
 
+/* Per-cell time label used only on narrow screens */
+.slot-time {
+    display: none;
+}
+
 .small.no-schedule {
     color: var(--color-tx-muted);
     opacity: 0.9;
@@ -498,6 +637,50 @@ small,
     transform: translateY(calc(var(--sbj-row-hover-translate) * -1));
     box-shadow: 0 10px 20px rgba(16, 16, 16, 0.08);
 }
+
+/* Extra compact rules for very small screens (phones) */
+@media (max-width:420px) {
+
+    /* Make the table more compact and allow vertical flow */
+    table.frametimetable {
+        table-layout: auto;
+        font-size: 0.95rem;
+    }
+
+    table.frametimetable th,
+    table.frametimetable td {
+        padding: 6px 6px;
+        font-size: 1rem;
+        height: auto;
+    }
+
+    /* Reduce day column width to improve content space */
+    th.day-col,
+    td.day-col {
+        width: 42px;
+        min-width: 42px;
+        font-size: 1.1rem;
+    }
+
+    /* Give subject cards a clear stacked layout inside cells */
+    table.frametimetable td.slot-cell .sbj_row {
+        display: block;
+        padding: 0.35rem;
+    }
+
+    /* Keep header labels readable but compact */
+    table.frametimetable thead th.slot-header {
+        font-size: 1rem;
+        white-space: normal;
+    }
+
+    /* Ensure action buttons are easy to tap */
+    .app>.table-wrap+div button {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+}
+
 
 /* When teachers are shown globally, allow cells to expand */
 .show-teachers .sbj_row {

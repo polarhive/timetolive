@@ -166,10 +166,12 @@ function backToMyTimetable() {
     if (window._lastTimetableData) {
         const content = document.getElementById('content');
         if (content) {
-            content.innerHTML = renderTimetable(window._lastTimetableData);
+            content.innerHTML = renderCurrentTimetable(window._lastTimetableData, comparisonData);
             initPrefControls();
             attachTimetableButtonListeners();
             applyFilters();
+                // Auto-scroll to today's day when in day view
+                scrollToToday();
         }
     }
 }
@@ -245,6 +247,40 @@ function initPrefControls() {
     // Force hideEmpty ON (user-requested: no control and always enabled)
     savePref('hideEmpty', true);
     UI_PREFS.hideEmpty = true;
+
+    // View toggle (Day / Table)
+    const viewBtn = document.getElementById('toggle-view');
+    if (viewBtn) {
+        // Replace the button node with a clone to remove any previously attached listeners
+        const newViewBtn = viewBtn.cloneNode(true);
+        viewBtn.parentNode.replaceChild(newViewBtn, viewBtn);
+
+        const cur = loadPref('viewMode', 'table');
+        UI_PREFS.viewMode = cur;
+
+        // Show the action the button will perform (i.e. show the other view)
+        function updateViewButton() {
+            if (UI_PREFS.viewMode === 'day') { newViewBtn.textContent = 'Table view'; newViewBtn.classList.add('active'); }
+            else { newViewBtn.textContent = 'Day view'; newViewBtn.classList.remove('active'); }
+        }
+        updateViewButton();
+
+        newViewBtn.addEventListener('click', () => {
+            UI_PREFS.viewMode = UI_PREFS.viewMode === 'day' ? 'table' : 'day';
+            savePref('viewMode', UI_PREFS.viewMode);
+            updateViewButton();
+            // Re-render using the new view mode
+            if (window._lastTimetableData) {
+                const content = document.getElementById('content');
+                content.innerHTML = renderCurrentTimetable(window._lastTimetableData, comparisonData);
+                initPrefControls();
+                attachTimetableButtonListeners();
+                applyFilters();
+                // Auto-scroll to today's day when switching to day view
+                scrollToToday();
+            }
+        });
+    }
 
     // Attach event listeners to timetable buttons
     attachTimetableButtonListeners();
@@ -524,7 +560,7 @@ function showCompareDialog() {
             window._lastTimetableData = yourData;
             const content = document.getElementById('content');
             if (content) {
-                content.innerHTML = renderTimetable(yourData, compData);
+                content.innerHTML = renderCurrentTimetable(yourData, compData);
                 // Re-initialize controls and reattach button listeners after re-render
                 initPrefControls();
                 attachTimetableButtonListeners();
@@ -863,7 +899,7 @@ function renderControls() {
     c.innerHTML = `
         <button id="toggle-teachers" class="control-button">Show Names</button>
         <button id="toggle-breaks" class="control-button">Show breaks</button>
-        <button id="logout-btn" class="control-button" style="margin-left: auto;">Refresh</button>
+        <button id="toggle-view" class="control-button">Table view</button>
     `;
 
     // Apply the theme class once on render (we keep default theme behavior but no toggle UI)
@@ -898,6 +934,157 @@ function applyFilters() {
     } else {
         empties.forEach(e => e.style.display = '');
     }
+}
+
+function renderDayView(data, comparisonData = null) {
+    // Stacked day view (mobile-first): each day is a block with a vertical list of slots
+    if (!data || !data.schedule) return '<h1>No timetable data available</h1>';
+    const schedule = (data.schedule || []).filter(day => day.day !== 'Saturday');
+    let html = '<div class="day-view">';
+    for (const day of schedule) {
+        html += `<div class="day-block">`;
+        html += `<div class="day-header">${escapeHtml(day.day)}</div>`;
+        if ((day.slots || []).length === 0) {
+            html += '<div class="slot-item"><div class="slot-item-time">-</div><div class="slot-item-content"><span class="small no-schedule">No slots</span></div></div>';
+        } else {
+            for (const s of (day.slots || [])) {
+                const label = s.slot ? convertLabelTo24(s.slot.label) : '';
+                const cells = s.cells || [];
+                const isBreak = (s.slot && s.slot.status === 1) || String(s.slot && s.slot.label || '').toLowerCase().includes('break');
+                html += `<div class="slot-item${isBreak ? ' break-slot' : ''}">`;
+                html += `<div class="slot-item-time">${escapeHtml(label)}</div>`;
+                html += `<div class="slot-item-content">`;
+
+                // Dedup by code
+                const seen = new Set();
+                const unique = [];
+                for (const c of cells) {
+                    const code = c.code || (c.subject ? c.subject.split('-')[0] : '');
+                    if (!seen.has(code)) { seen.add(code); unique.push(c); }
+                }
+
+                // Helper to map a code to elective label (E1..E4)
+                function electiveLabelForCode(code) {
+                    const m = String(code || '').match(/UE\d+CS\d+(AA|AB|BA|BB)\d+/);
+                    if (!m) return null;
+                    const type = m[1];
+                    const groups = { AA: 'E1', AB: 'E2', BA: 'E3', BB: 'E4' };
+                    return groups[type] || null;
+                }
+
+                if (unique.length === 0) {
+                    html += '<span class="small">-</span>';
+                } else {
+                    // If multiple unique cells are all electives of the same group (E1..E4),
+                    // render a single merged elective card like in the table view.
+                    if (unique.length > 1) {
+                        const electiveLabels = new Set(unique.map(c => electiveLabelForCode(c.code || '')));
+                        // Remove null/undefined from the set
+                        electiveLabels.forEach(v => { if (!v) electiveLabels.delete(v); });
+                        if (electiveLabels.size === 1) {
+                            const electiveLabel = [...electiveLabels][0];
+                            const style = colorForCode(unique[0].code || electiveLabel);
+                            html += `<div class="sbj_row"${style ? ` style="${style}"` : ''} role="article" tabindex="0" aria-label="${escapeHtml(electiveLabel)}">`;
+                            html += `<div class="subject"><strong>${escapeHtml(electiveLabel)}</strong></div>`;
+                            html += '</div>';
+                        } else {
+                            for (const c of unique) {
+                                const code = c.code || (c.subject ? c.subject.split('-')[0] : '');
+                                let subj = c.subject || '';
+                                const elective = electiveLabelForCode(code);
+                                if (elective) subj = elective;
+                                else if (subjectMapping[code]) subj = subjectMapping[code];
+
+                                let facs = '';
+                                if (Array.isArray(c.faculties) && c.faculties.length) {
+                                    const seenF = new Set();
+                                    const uniqueF = [];
+                                    for (const raw of c.faculties) {
+                                        const n = String(raw || '').trim();
+                                        const key = n.toLowerCase();
+                                        if (!seenF.has(key) && n) { seenF.add(key); uniqueF.push(n); }
+                                    }
+                                    facs = uniqueF.join(', ');
+                                }
+
+                                const style = colorForCode(code);
+                                html += `<div class="sbj_row"${style ? ` style="${style}"` : ''} role="article" tabindex="0" aria-label="${escapeHtml(subj)} - Faculties: ${escapeHtml(facs)}">`;
+                                html += `<div class="subject"><strong>${escapeHtml(subj)}</strong></div>`;
+                                if (facs) html += `<div class="faculty small">${escapeHtml(facs)}</div>`;
+                                html += '</div>';
+                            }
+                        }
+                    } else {
+                        // Single unique cell — render normally
+                        const c = unique[0];
+                        const code = c.code || (c.subject ? c.subject.split('-')[0] : '');
+                        let subj = c.subject || '';
+                        const elective = electiveLabelForCode(code);
+                        if (elective) subj = elective;
+                        else if (subjectMapping[code]) subj = subjectMapping[code];
+
+                        let facs = '';
+                        if (Array.isArray(c.faculties) && c.faculties.length) {
+                            const seenF = new Set();
+                            const uniqueF = [];
+                            for (const raw of c.faculties) {
+                                const n = String(raw || '').trim();
+                                const key = n.toLowerCase();
+                                if (!seenF.has(key) && n) { seenF.add(key); uniqueF.push(n); }
+                            }
+                            facs = uniqueF.join(', ');
+                        }
+
+                        const style = colorForCode(code);
+                        html += `<div class="sbj_row"${style ? ` style="${style}"` : ''} role="article" tabindex="0" aria-label="${escapeHtml(subj)} - Faculties: ${escapeHtml(facs)}">`;
+                        html += `<div class="subject"><strong>${escapeHtml(subj)}</strong></div>`;
+                        if (facs) html += `<div class="faculty small">${escapeHtml(facs)}</div>`;
+                        html += '</div>';
+                    }
+                }
+
+                // common free overlay
+                if (comparisonData && comparisonData.common_free_periods && comparisonData.common_free_periods.some(p => p.day === day.day && p.time === label)) {
+                    html += '<div class="free-overlay" style="position: absolute; inset: 0; background: rgba(40, 167, 69, 0.12); border: 2px solid #28a745; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #155724; font-weight: bold;">Free</div>';
+                }
+
+                html += '</div></div>';
+            }
+        }
+        html += '</div>';
+    }
+    html += '</div>';
+
+    // Action buttons (stacked in day-view for easy tapping)
+    html += '<div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 1rem;">';
+    if (comparisonData) html += '<button id="back-to-my" onclick="backToMyTimetable()" style="flex:1; padding: 0.75rem; background: #6c757d; color: white; border: none; border-radius: 6px; cursor: pointer;">Back to My Timetable</button>';
+    html += '<button id="compare-btn" style="flex:1; padding: 0.75rem; background: #007bff; color: white; border: none; border-radius: 6px; cursor: pointer;">Compare</button>';
+    html += '<button id="export-ical" class="control-button" style="flex:1; padding: 0.75rem; background: #28a745; color: white; border: none; border-radius: 6px; cursor: pointer;">Add to Cal</button>';
+    html += '<button id="logout-btn" class="control-button" style="flex:1; padding: 0.75rem; background: var(--color-ui-normal); color: var(--color-tx-normal); border: 1px solid var(--color-ui-normal); border-radius: 6px; cursor: pointer;">Refresh</button>';
+    html += '</div>';
+
+    return html;
+}
+
+// Scroll the day-view to today's weekday header (e.g., Friday)
+function scrollToToday() {
+    try {
+        const view = (UI_PREFS && UI_PREFS.viewMode) || loadPref('viewMode', 'table');
+        if (view !== 'day') return;
+        const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
+        const headers = Array.from(document.querySelectorAll('.day-header'));
+        const match = headers.find(h => h.textContent && h.textContent.trim().toLowerCase() === today.toLowerCase());
+        if (match) {
+            match.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+        }
+    } catch (e) { /* ignore */ }
+}
+
+function renderCurrentTimetable(data, comparisonData = null) {
+    // Determine which view to show: 'day' or 'table' (no auto mode)
+    const view = (UI_PREFS && UI_PREFS.viewMode) || loadPref('viewMode', 'table');
+    if (view === 'day') return renderDayView(data, comparisonData);
+    return renderTimetable(data, comparisonData);
 }
 
 function renderTimetable(data, comparisonData = null) {
@@ -1146,6 +1333,9 @@ function renderTimetable(data, comparisonData = null) {
 
                         html += `<td data-group-index="${gi}"${subEmptyAttr} class="slot-cell${subBreakClass}" style="position: relative;">`;
 
+                        // Small time label for mobile readability
+                        html += `<div class="slot-time small" style="margin-bottom: 0.25rem; color: var(--color-tx-muted);">${escapeHtml(subLabel)}</div>`;
+
                         const ms = subMatchedSlot;
                         const allCells = ms.cells || [];
 
@@ -1244,6 +1434,8 @@ function renderTimetable(data, comparisonData = null) {
 
             // Default behavior: render a single (possibly colspan'ed) cell for the group
             html += `<td${colspan} data-group-index="${gi}"${emptyAttr} class="slot-cell${breakClass}" style="position: relative;">`;
+            // Add a small header/time label inside the cell to make stacked mobile layout clearer
+            html += `<div class="slot-time small" style="margin-bottom: 0.25rem; color: var(--color-tx-muted);">${escapeHtml(colLabels[gi] || '')}</div>`;
             let hasContent = false;
 
             // Match the header group's orderedBy keys into this day's slots (preserves alignment)
@@ -1379,6 +1571,7 @@ function renderTimetable(data, comparisonData = null) {
     }
     html += '<button id="compare-btn" style="padding: 0.75rem 1.5rem; background: #007bff; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem; font-weight: 500;">Compare</button>';
     html += '<button id="export-ical" class="control-button" style="padding: 0.75rem 1.5rem; background: #28a745; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem; font-weight: 500;">Add to Cal</button>';
+    html += '<button id="logout-btn" class="control-button" style="padding: 0.75rem 1.5rem; background: var(--color-ui-normal); color: var(--color-tx-normal); border: 1px solid var(--color-ui-normal); border-radius: 6px; cursor: pointer; font-size: 1rem;">Refresh</button>';
     html += '</div>';
 
     return html;
@@ -1438,9 +1631,11 @@ function initTimetableApp() {
                     window._ownTimetableData = data;
                     const loading = document.querySelector('.loading');
                     if (loading) loading.style.display = 'none';
-                    content.innerHTML = renderTimetable(data, comparisonData);
+                    content.innerHTML = renderCurrentTimetable(data, comparisonData);
                     initPrefControls();
                     applyFilters();
+                    // Auto-scroll to today's day when in day view
+                    scrollToToday();
                     return;
                 } catch (e) {
                     console.error('Failed to parse cached timetable:', e);
@@ -1486,9 +1681,11 @@ function initTimetableApp() {
                     window._ownTimetableData = data;
                     const loading = document.querySelector('.loading');
                     if (loading) loading.style.display = 'none';
-                    content.innerHTML = renderTimetable(data, comparisonData);
+                    content.innerHTML = renderCurrentTimetable(data, comparisonData);
                     initPrefControls();
                     applyFilters();
+
+                    // No auto-switching: user chooses Day or Table explicitly (auto mode removed)
                 })
                 .catch(err => {
                     console.error('Error loading timetable:', err);
