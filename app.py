@@ -617,7 +617,7 @@ def timetable_to_ics(timetable: dict, anchor_start=None) -> str:
     lines = []
     lines.append("BEGIN:VCALENDAR")
     lines.append("VERSION:2.0")
-    lines.append("PRODID:-//polarhive//Timetable//EN")
+    lines.append("PRODID:-//timetolive//Timetable//EN")
 
     meta = timetable.get("meta") or {}
     room = meta.get("Room") or meta.get("Batch") or ""
@@ -679,7 +679,7 @@ def timetable_to_ics(timetable: dict, anchor_start=None) -> str:
                 # UID: include code/day/slot index and timestamp
                 import time
 
-                uid = f"{code}-{day_name}-{slot.get('slot', {}).get('orderedBy', 0)}-{int(time.time())}@polarhive"
+                uid = f"{code}-{day_name}-{slot.get('slot', {}).get('orderedBy', 0)}-{int(time.time())}@timetolive"
 
                 lines.append("BEGIN:VEVENT")
                 lines.append(f"UID:{uid}")
