@@ -1,0 +1,809 @@
+{
+  "meta": {
+    "Batch": "Main 209",
+    "Class Name": "Sem-4",
+    "Department": "2024-25",
+    "Room": "Main 209",
+    "Section": "Section A"
+  },
+  "schedule": [
+    {
+      "day": "Monday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE24CS251B",
+              "faculties": [
+                "SWATHI PRIYA N"
+              ],
+              "name": "MICROPROCESSOR AND COMPUTER ARCHITECTURE",
+              "raw": [
+                "ttSubject_&&UE24CS251B-MICROPROCESSOR AND COMPUTER ARCHITECTURE",
+                "ttFaculty_1_&&SWATHI PRIYA N"
+              ],
+              "sub_code": "MPCA",
+              "subject": "UE24CS251B-MICROPROCESSOR AND COMPUTER ARCHITECTURE"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24CS242B",
+              "faculties": [
+                "LENISH PRAMIEE JERONE"
+              ],
+              "name": "OPERATING SYSTEMS",
+              "raw": [
+                "ttSubject_&&UE24CS242B-OPERATING SYSTEMS",
+                "ttFaculty_1_&&LENISH PRAMIEE JERONE"
+              ],
+              "sub_code": "OS",
+              "subject": "UE24CS242B-OPERATING SYSTEMS"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24CS252B",
+              "faculties": [
+                "CHANDRASHEKHAR CHAVAN"
+              ],
+              "name": "COMPUTER NETWORKS",
+              "raw": [
+                "ttSubject_&&UE24CS252B-COMPUTER NETWORKS",
+                "ttFaculty_1_&&CHANDRASHEKHAR CHAVAN"
+              ],
+              "sub_code": "CN",
+              "subject": "UE24CS252B-COMPUTER NETWORKS"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24CS252B",
+              "faculties": [
+                "CHANDRASHEKHAR CHAVAN"
+              ],
+              "name": "COMPUTER NETWORKS",
+              "raw": [
+                "ttSubject_&&UE24CS252B-COMPUTER NETWORKS",
+                "ttFaculty_1_&&CHANDRASHEKHAR CHAVAN"
+              ],
+              "sub_code": "CN",
+              "subject": "UE24CS252B-COMPUTER NETWORKS"
+            }
+          ],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24CS251B",
+              "faculties": [
+                "SWATHI PRIYA N"
+              ],
+              "name": "MICROPROCESSOR AND COMPUTER ARCHITECTURE",
+              "raw": [
+                "ttSubject_&&UE24CS251B-MICROPROCESSOR AND COMPUTER ARCHITECTURE",
+                "ttFaculty_1_&&SWATHI PRIYA N"
+              ],
+              "sub_code": "MPCA",
+              "subject": "UE24CS251B-MICROPROCESSOR AND COMPUTER ARCHITECTURE"
+            }
+          ],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24CS251B",
+              "faculties": [
+                "SWATHI PRIYA N"
+              ],
+              "name": "MICROPROCESSOR AND COMPUTER ARCHITECTURE",
+              "raw": [
+                "ttSubject_&&UE24CS251B-MICROPROCESSOR AND COMPUTER ARCHITECTURE",
+                "ttFaculty_1_&&SWATHI PRIYA N"
+              ],
+              "sub_code": "MPCA",
+              "subject": "UE24CS251B-MICROPROCESSOR AND COMPUTER ARCHITECTURE"
+            }
+          ],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE24CS242B",
+              "faculties": [
+                "LENISH PRAMIEE JERONE"
+              ],
+              "name": "OPERATING SYSTEMS",
+              "raw": [
+                "ttSubject_&&UE24CS242B-OPERATING SYSTEMS",
+                "ttFaculty_1_&&LENISH PRAMIEE JERONE"
+              ],
+              "sub_code": "OS",
+              "subject": "UE24CS242B-OPERATING SYSTEMS"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24CS251B",
+              "faculties": [
+                "SWATHI PRIYA N"
+              ],
+              "name": "MICROPROCESSOR AND COMPUTER ARCHITECTURE",
+              "raw": [
+                "ttSubject_&&UE24CS251B-MICROPROCESSOR AND COMPUTER ARCHITECTURE",
+                "ttFaculty_1_&&SWATHI PRIYA N"
+              ],
+              "sub_code": "MPCA",
+              "subject": "UE24CS251B-MICROPROCESSOR AND COMPUTER ARCHITECTURE"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24CS242B",
+              "faculties": [
+                "LENISH PRAMIEE JERONE"
+              ],
+              "name": "OPERATING SYSTEMS",
+              "raw": [
+                "ttSubject_&&UE24CS242B-OPERATING SYSTEMS",
+                "ttFaculty_1_&&LENISH PRAMIEE JERONE"
+              ],
+              "sub_code": "OS",
+              "subject": "UE24CS242B-OPERATING SYSTEMS"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24MA241B",
+              "faculties": [
+                "GIRISH V R"
+              ],
+              "name": "LINEAR ALGEBRA AND ITS APPLICATIONS",
+              "raw": [
+                "ttSubject_&&UE24MA241B-LINEAR ALGEBRA AND ITS APPLICATIONS",
+                "ttFaculty_1_&&GIRISH V R"
+              ],
+              "sub_code": "LA",
+              "subject": "UE24MA241B-LINEAR ALGEBRA AND ITS APPLICATIONS"
+            }
+          ],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE24CS252B",
+              "faculties": [
+                "CHANDRASHEKHAR CHAVAN"
+              ],
+              "name": "COMPUTER NETWORKS",
+              "raw": [
+                "ttSubject_&&UE24CS252B-COMPUTER NETWORKS",
+                "ttFaculty_1_&&CHANDRASHEKHAR CHAVAN"
+              ],
+              "sub_code": "CN",
+              "subject": "UE24CS252B-COMPUTER NETWORKS"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24CS241B",
+              "faculties": [
+                "DR. SANDESH B J"
+              ],
+              "name": "DESIGN AND ANALYSIS OF ALGORITHMS",
+              "raw": [
+                "ttSubject_&&UE24CS241B-DESIGN AND ANALYSIS OF ALGORITHMS",
+                "ttFaculty_1_&&DR. SANDESH B J"
+              ],
+              "sub_code": "DAA",
+              "subject": "UE24CS241B-DESIGN AND ANALYSIS OF ALGORITHMS"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24CS251B",
+              "faculties": [
+                "SWATHI PRIYA N"
+              ],
+              "name": "MICROPROCESSOR AND COMPUTER ARCHITECTURE",
+              "raw": [
+                "ttSubject_&&UE24CS251B-MICROPROCESSOR AND COMPUTER ARCHITECTURE",
+                "ttFaculty_1_&&SWATHI PRIYA N"
+              ],
+              "sub_code": "MPCA",
+              "subject": "UE24CS251B-MICROPROCESSOR AND COMPUTER ARCHITECTURE"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24CS242B",
+              "faculties": [
+                "LENISH PRAMIEE JERONE"
+              ],
+              "name": "OPERATING SYSTEMS",
+              "raw": [
+                "ttSubject_&&UE24CS242B-OPERATING SYSTEMS",
+                "ttFaculty_1_&&LENISH PRAMIEE JERONE"
+              ],
+              "sub_code": "OS",
+              "subject": "UE24CS242B-OPERATING SYSTEMS"
+            }
+          ],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE24CS252B",
+              "faculties": [
+                "CHANDRASHEKHAR CHAVAN"
+              ],
+              "name": "COMPUTER NETWORKS",
+              "raw": [
+                "ttSubject_&&UE24CS252B-COMPUTER NETWORKS",
+                "ttFaculty_1_&&CHANDRASHEKHAR CHAVAN"
+              ],
+              "sub_code": "CN",
+              "subject": "UE24CS252B-COMPUTER NETWORKS"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24CS241B",
+              "faculties": [
+                "DR SANDESH B J"
+              ],
+              "name": "DESIGN AND ANALYSIS OF ALGORITHMS",
+              "raw": [
+                "ttSubject_&&UE24CS241B-DESIGN AND ANALYSIS OF ALGORITHMS",
+                "ttFaculty_1_&&DR SANDESH B J"
+              ],
+              "sub_code": "DAA",
+              "subject": "UE24CS241B-DESIGN AND ANALYSIS OF ALGORITHMS"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24CS241B",
+              "faculties": [
+                "DR SANDESH B J"
+              ],
+              "name": "DESIGN AND ANALYSIS OF ALGORITHMS",
+              "raw": [
+                "ttSubject_&&UE24CS241B-DESIGN AND ANALYSIS OF ALGORITHMS",
+                "ttFaculty_1_&&DR SANDESH B J"
+              ],
+              "sub_code": "DAA",
+              "subject": "UE24CS241B-DESIGN AND ANALYSIS OF ALGORITHMS"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24MA241B",
+              "faculties": [
+                "GIRISH V R"
+              ],
+              "name": "LINEAR ALGEBRA AND ITS APPLICATIONS",
+              "raw": [
+                "ttSubject_&&UE24MA241B-LINEAR ALGEBRA AND ITS APPLICATIONS",
+                "ttFaculty_1_&&GIRISH V R"
+              ],
+              "sub_code": "LA",
+              "subject": "UE24MA241B-LINEAR ALGEBRA AND ITS APPLICATIONS"
+            }
+          ],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24CS252B",
+              "faculties": [
+                "CHANDRASHEKHAR CHAVAN"
+              ],
+              "name": "COMPUTER NETWORKS",
+              "raw": [
+                "ttSubject_&&UE24CS252B-COMPUTER NETWORKS",
+                "ttFaculty_1_&&CHANDRASHEKHAR CHAVAN"
+              ],
+              "sub_code": "CN",
+              "subject": "UE24CS252B-COMPUTER NETWORKS"
+            }
+          ],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24CS252B",
+              "faculties": [
+                "CHANDRASHEKHAR CHAVAN"
+              ],
+              "name": "COMPUTER NETWORKS",
+              "raw": [
+                "ttSubject_&&UE24CS252B-COMPUTER NETWORKS",
+                "ttFaculty_1_&&CHANDRASHEKHAR CHAVAN"
+              ],
+              "sub_code": "CN",
+              "subject": "UE24CS252B-COMPUTER NETWORKS"
+            }
+          ],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Friday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE24MA241B",
+              "faculties": [
+                "GIRISH V R"
+              ],
+              "name": "LINEAR ALGEBRA AND ITS APPLICATIONS",
+              "raw": [
+                "ttSubject_&&UE24MA241B-LINEAR ALGEBRA AND ITS APPLICATIONS",
+                "ttFaculty_1_&&GIRISH V R"
+              ],
+              "sub_code": "LA",
+              "subject": "UE24MA241B-LINEAR ALGEBRA AND ITS APPLICATIONS"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24CS241B",
+              "faculties": [
+                "DR SANDESH B J"
+              ],
+              "name": "DESIGN AND ANALYSIS OF ALGORITHMS",
+              "raw": [
+                "ttSubject_&&UE24CS241B-DESIGN AND ANALYSIS OF ALGORITHMS",
+                "ttFaculty_1_&&DR SANDESH B J"
+              ],
+              "sub_code": "DAA",
+              "subject": "UE24CS241B-DESIGN AND ANALYSIS OF ALGORITHMS"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24MA241B",
+              "faculties": [
+                "GIRISH V R"
+              ],
+              "name": "LINEAR ALGEBRA AND ITS APPLICATIONS",
+              "raw": [
+                "ttSubject_&&UE24MA241B-LINEAR ALGEBRA AND ITS APPLICATIONS",
+                "ttFaculty_1_&&GIRISH V R"
+              ],
+              "sub_code": "LA",
+              "subject": "UE24MA241B-LINEAR ALGEBRA AND ITS APPLICATIONS"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE24CS251B",
+              "faculties": [
+                "SWATHI PRIYA N"
+              ],
+              "name": "MICROPROCESSOR AND COMPUTER ARCHITECTURE",
+              "raw": [
+                "ttSubject_&&UE24CS251B-MICROPROCESSOR AND COMPUTER ARCHITECTURE",
+                "ttFaculty_1_&&SWATHI PRIYA N"
+              ],
+              "sub_code": "MPCA",
+              "subject": "UE24CS251B-MICROPROCESSOR AND COMPUTER ARCHITECTURE"
+            }
+          ],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "slots": [
+        {
+          "cells": [],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    }
+  ]
+}
