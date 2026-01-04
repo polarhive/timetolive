@@ -1,0 +1,825 @@
+{
+  "meta": {
+    "Batch": "Main 407",
+    "Class Name": "Sem-6",
+    "Department": "2023-24",
+    "Room": "Main 407",
+    "Section": "Section F"
+  },
+  "schedule": [
+    {
+      "day": "Monday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE23CS341B",
+              "faculties": [
+                "SHEMEEMA"
+              ],
+              "name": "COMPILER DESIGN",
+              "raw": [
+                "ttSubject_&&UE23CS341B-COMPILER DESIGN",
+                "ttFaculty_1_&&SHEMEEMA"
+              ],
+              "sub_code": "CD",
+              "subject": "UE23CS341B-COMPILER DESIGN"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23CS341B",
+              "faculties": [
+                "SHEMEEMA"
+              ],
+              "name": "COMPILER DESIGN",
+              "raw": [
+                "ttSubject_&&UE23CS341B-COMPILER DESIGN",
+                "ttFaculty_1_&&SHEMEEMA"
+              ],
+              "sub_code": "CD",
+              "subject": "UE23CS341B-COMPILER DESIGN"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23CS343BB2",
+              "faculties": [
+                "DR M FARIDA BEGAM"
+              ],
+              "name": "TOPICS IN DEEP LEARNING",
+              "raw": [
+                "ttSubject_&&UE23CS343BB2-TOPICS IN DEEP LEARNING",
+                "ttFaculty_1_&&DR M FARIDA BEGAM"
+              ],
+              "sub_code": "TDL",
+              "subject": "UE23CS343BB2-TOPICS IN DEEP LEARNING"
+            },
+            {
+              "code": "UE23CS343BB6",
+              "faculties": [
+                "VINODHA K"
+              ],
+              "name": "INFORMATION SECURITY",
+              "raw": [
+                "ttSubject_&&UE23CS343BB6-INFORMATION SECURITY",
+                "ttFaculty_1_&&VINODHA K"
+              ],
+              "sub_code": "IS",
+              "subject": "UE23CS343BB6-INFORMATION SECURITY"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23CS343BB2",
+              "faculties": [
+                "DR M FARIDA BEGAM"
+              ],
+              "name": "TOPICS IN DEEP LEARNING",
+              "raw": [
+                "ttSubject_&&UE23CS343BB2-TOPICS IN DEEP LEARNING",
+                "ttFaculty_1_&&DR M FARIDA BEGAM"
+              ],
+              "sub_code": "TDL",
+              "subject": "UE23CS343BB2-TOPICS IN DEEP LEARNING"
+            },
+            {
+              "code": "UE23CS343BB6",
+              "faculties": [
+                "VINODHA K"
+              ],
+              "name": "INFORMATION SECURITY",
+              "raw": [
+                "ttSubject_&&UE23CS343BB6-INFORMATION SECURITY",
+                "ttFaculty_1_&&VINODHA K"
+              ],
+              "sub_code": "IS",
+              "subject": "UE23CS343BB6-INFORMATION SECURITY"
+            }
+          ],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE23CS342BA6",
+              "faculties": [
+                "M SHEELA DEVI"
+              ],
+              "name": "DIGITAL FORENSICS AND INCIDENT RESPONSES",
+              "raw": [
+                "ttSubject_&&UE23CS342BA6-DIGITAL FORENSICS AND INCIDENT RESPONSES",
+                "ttFaculty_1_&&M SHEELA DEVI"
+              ],
+              "sub_code": "DFIR",
+              "subject": "UE23CS342BA6-DIGITAL FORENSICS AND INCIDENT RESPONSES"
+            },
+            {
+              "code": "UE23CS342BA7",
+              "faculties": [
+                "MANNAR MANNAN J"
+              ],
+              "name": "DIGITAL TWINS",
+              "raw": [
+                "ttSubject_&&UE23CS342BA7-DIGITAL TWINS",
+                "ttFaculty_1_&&MANNAR MANNAN J"
+              ],
+              "sub_code": "DXT",
+              "subject": "UE23CS342BA7-DIGITAL TWINS"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23CS342BA6",
+              "faculties": [
+                "M SHEELA DEVI"
+              ],
+              "name": "DIGITAL FORENSICS AND INCIDENT RESPONSES",
+              "raw": [
+                "ttSubject_&&UE23CS342BA6-DIGITAL FORENSICS AND INCIDENT RESPONSES",
+                "ttFaculty_1_&&M SHEELA DEVI"
+              ],
+              "sub_code": "DFIR",
+              "subject": "UE23CS342BA6-DIGITAL FORENSICS AND INCIDENT RESPONSES"
+            },
+            {
+              "code": "UE23CS342BA7",
+              "faculties": [
+                "MANNAR MANNAN J"
+              ],
+              "name": "DIGITAL TWINS",
+              "raw": [
+                "ttSubject_&&UE23CS342BA7-DIGITAL TWINS",
+                "ttFaculty_1_&&MANNAR MANNAN J"
+              ],
+              "sub_code": "DXT",
+              "subject": "UE23CS342BA7-DIGITAL TWINS"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23CS352B",
+              "faculties": [
+                "NIVEDITA KASTURI"
+              ],
+              "name": "OBJECT ORIENTED ANALYSIS AND DESIGN",
+              "raw": [
+                "ttSubject_&&UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN",
+                "ttFaculty_1_&&NIVEDITA KASTURI"
+              ],
+              "sub_code": "OOAD",
+              "subject": "UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23CS352B",
+              "faculties": [
+                "NIVEDITA KASTURI"
+              ],
+              "name": "OBJECT ORIENTED ANALYSIS AND DESIGN",
+              "raw": [
+                "ttSubject_&&UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN",
+                "ttFaculty_1_&&NIVEDITA KASTURI"
+              ],
+              "sub_code": "OOAD",
+              "subject": "UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN"
+            }
+          ],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23CS351B",
+              "faculties": [
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA"
+              ],
+              "name": "CLOUD COMPUTING",
+              "raw": [
+                "ttSubject_&&UE23CS351B-CLOUD COMPUTING",
+                "ttFaculty_1_&&DR SARITHA",
+                "ttFaculty_2_&&DR SARITHA",
+                "ttFaculty_3_&&DR SARITHA",
+                "ttFaculty_4_&&DR SARITHA",
+                "ttFaculty_5_&&DR SARITHA"
+              ],
+              "sub_code": "CC",
+              "subject": "UE23CS351B-CLOUD COMPUTING"
+            }
+          ],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23CS351B",
+              "faculties": [
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA"
+              ],
+              "name": "CLOUD COMPUTING",
+              "raw": [
+                "ttSubject_&&UE23CS351B-CLOUD COMPUTING",
+                "ttFaculty_1_&&DR SARITHA",
+                "ttFaculty_2_&&DR SARITHA",
+                "ttFaculty_3_&&DR SARITHA",
+                "ttFaculty_4_&&DR SARITHA",
+                "ttFaculty_5_&&DR SARITHA"
+              ],
+              "sub_code": "CC",
+              "subject": "UE23CS351B-CLOUD COMPUTING"
+            }
+          ],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE23CS351B",
+              "faculties": [
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA"
+              ],
+              "name": "CLOUD COMPUTING",
+              "raw": [
+                "ttSubject_&&UE23CS351B-CLOUD COMPUTING",
+                "ttFaculty_1_&&DR SARITHA",
+                "ttFaculty_2_&&DR SARITHA",
+                "ttFaculty_3_&&DR SARITHA",
+                "ttFaculty_4_&&DR SARITHA",
+                "ttFaculty_5_&&DR SARITHA"
+              ],
+              "sub_code": "CC",
+              "subject": "UE23CS351B-CLOUD COMPUTING"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23CS351B",
+              "faculties": [
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA"
+              ],
+              "name": "CLOUD COMPUTING",
+              "raw": [
+                "ttSubject_&&UE23CS351B-CLOUD COMPUTING",
+                "ttFaculty_1_&&DR SARITHA",
+                "ttFaculty_2_&&DR SARITHA",
+                "ttFaculty_3_&&DR SARITHA",
+                "ttFaculty_4_&&DR SARITHA",
+                "ttFaculty_5_&&DR SARITHA"
+              ],
+              "sub_code": "CC",
+              "subject": "UE23CS351B-CLOUD COMPUTING"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23CS352B",
+              "faculties": [
+                "NIVEDITA KASTURI"
+              ],
+              "name": "OBJECT ORIENTED ANALYSIS AND DESIGN",
+              "raw": [
+                "ttSubject_&&UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN",
+                "ttFaculty_1_&&NIVEDITA KASTURI"
+              ],
+              "sub_code": "OOAD",
+              "subject": "UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "slots": [
+        {
+          "cells": [],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23CS351B",
+              "faculties": [
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA"
+              ],
+              "name": "CLOUD COMPUTING",
+              "raw": [
+                "ttSubject_&&UE23CS351B-CLOUD COMPUTING",
+                "ttFaculty_1_&&DR SARITHA",
+                "ttFaculty_2_&&DR SARITHA",
+                "ttFaculty_3_&&DR SARITHA",
+                "ttFaculty_4_&&DR SARITHA",
+                "ttFaculty_5_&&DR SARITHA"
+              ],
+              "sub_code": "CC",
+              "subject": "UE23CS351B-CLOUD COMPUTING"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23CS351B",
+              "faculties": [
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA",
+                "DR SARITHA"
+              ],
+              "name": "CLOUD COMPUTING",
+              "raw": [
+                "ttSubject_&&UE23CS351B-CLOUD COMPUTING",
+                "ttFaculty_1_&&DR SARITHA",
+                "ttFaculty_2_&&DR SARITHA",
+                "ttFaculty_3_&&DR SARITHA",
+                "ttFaculty_4_&&DR SARITHA",
+                "ttFaculty_5_&&DR SARITHA"
+              ],
+              "sub_code": "CC",
+              "subject": "UE23CS351B-CLOUD COMPUTING"
+            }
+          ],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Friday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE23CS352B",
+              "faculties": [
+                "NIVEDITA KASTURI"
+              ],
+              "name": "OBJECT ORIENTED ANALYSIS AND DESIGN",
+              "raw": [
+                "ttSubject_&&UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN",
+                "ttFaculty_1_&&NIVEDITA KASTURI"
+              ],
+              "sub_code": "OOAD",
+              "subject": "UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23CS352B",
+              "faculties": [
+                "NIVEDITA KASTURI"
+              ],
+              "name": "OBJECT ORIENTED ANALYSIS AND DESIGN",
+              "raw": [
+                "ttSubject_&&UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN",
+                "ttFaculty_1_&&NIVEDITA KASTURI"
+              ],
+              "sub_code": "OOAD",
+              "subject": "UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN"
+            }
+          ],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE23CS352B",
+              "faculties": [
+                "NIVEDITA KASTURI"
+              ],
+              "name": "OBJECT ORIENTED ANALYSIS AND DESIGN",
+              "raw": [
+                "ttSubject_&&UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN",
+                "ttFaculty_1_&&NIVEDITA KASTURI"
+              ],
+              "sub_code": "OOAD",
+              "subject": "UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN"
+            }
+          ],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "slots": [
+        {
+          "cells": [],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    }
+  ]
+}
