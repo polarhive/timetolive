@@ -463,7 +463,21 @@
           }
         },
         {
-          "cells": [],
+          "cells": [
+            {
+              "code": "UE23CS341B",
+              "faculties": [
+                "SHEMEEMA"
+              ],
+              "name": "COMPILER DESIGN",
+              "raw": [
+                "ttSubject_&&UE23CS341B-COMPILER DESIGN",
+                "ttFaculty_1_&&SHEMEEMA"
+              ],
+              "sub_code": "CD",
+              "subject": "UE23CS341B-COMPILER DESIGN"
+            }
+          ],
           "slot": {
             "label": "12:15 PM-01:15 PM",
             "orderedBy": 5,
@@ -651,7 +665,21 @@
           }
         },
         {
-          "cells": [],
+          "cells": [
+            {
+              "code": "UE23CS341B",
+              "faculties": [
+                "SHEMEEMA"
+              ],
+              "name": "COMPILER DESIGN",
+              "raw": [
+                "ttSubject_&&UE23CS341B-COMPILER DESIGN",
+                "ttFaculty_1_&&SHEMEEMA"
+              ],
+              "sub_code": "CD",
+              "subject": "UE23CS341B-COMPILER DESIGN"
+            }
+          ],
           "slot": {
             "label": "09:45 AM-10:45 AM",
             "orderedBy": 2,
@@ -667,7 +695,34 @@
           }
         },
         {
-          "cells": [],
+          "cells": [
+            {
+              "code": "UE23CS342BA6",
+              "faculties": [
+                "M SHEELA DEVI"
+              ],
+              "name": "DIGITAL FORENSICS AND INCIDENT RESPONSES",
+              "raw": [
+                "ttSubject_&&UE23CS342BA6-DIGITAL FORENSICS AND INCIDENT RESPONSES",
+                "ttFaculty_1_&&M SHEELA DEVI"
+              ],
+              "sub_code": "DFIR",
+              "subject": "UE23CS342BA6-DIGITAL FORENSICS AND INCIDENT RESPONSES"
+            },
+            {
+              "code": "UE23CS342BA7",
+              "faculties": [
+                "MANNAR MANNAN J"
+              ],
+              "name": "DIGITAL TWINS",
+              "raw": [
+                "ttSubject_&&UE23CS342BA7-DIGITAL TWINS",
+                "ttFaculty_1_&&MANNAR MANNAN J"
+              ],
+              "sub_code": "DXT",
+              "subject": "UE23CS342BA7-DIGITAL TWINS"
+            }
+          ],
           "slot": {
             "label": "11:15 AM-12:15 PM",
             "orderedBy": 4,
