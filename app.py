@@ -215,7 +215,12 @@ def fetch_live_timetable(username: str, password: str) -> dict:
     scraper = PESUTimetableScraper(username, password)
     try:
         scraper.login()
-        scraper.csrf_token = scraper._prepare_profile_context()
+        try:
+            scraper.csrf_token = scraper._prepare_profile_context()
+        except Exception:
+            logger.debug(
+                "Failed to prepare profile context after login; continuing and deferring to fetch_timetable"
+            )
         data = scraper.fetch_timetable()
         return data
     finally:
