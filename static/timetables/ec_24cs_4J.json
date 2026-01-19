@@ -387,7 +387,21 @@
           }
         },
         {
-          "cells": [],
+          "cells": [
+            {
+              "code": "UE25MA201B",
+              "faculties": [
+                "JAGATHESWARI G K"
+              ],
+              "name": "BRIDGE COURSE MATHEMATICS",
+              "raw": [
+                "ttSubject_&&UE25MA201B-BRIDGE COURSE MATHEMATICS",
+                "ttFaculty_1_&&JAGATHESWARI G K"
+              ],
+              "sub_code": "Bridge Math",
+              "subject": "UE25MA201B-BRIDGE COURSE MATHEMATICS"
+            }
+          ],
           "slot": {
             "label": "02:00 PM-03:00 PM",
             "orderedBy": 7,
@@ -395,7 +409,21 @@
           }
         },
         {
-          "cells": [],
+          "cells": [
+            {
+              "code": "UE25MA201B",
+              "faculties": [
+                "JAGATHESWARI G K"
+              ],
+              "name": "BRIDGE COURSE MATHEMATICS",
+              "raw": [
+                "ttSubject_&&UE25MA201B-BRIDGE COURSE MATHEMATICS",
+                "ttFaculty_1_&&JAGATHESWARI G K"
+              ],
+              "sub_code": "Bridge Math",
+              "subject": "UE25MA201B-BRIDGE COURSE MATHEMATICS"
+            }
+          ],
           "slot": {
             "label": "03:00 PM-04:00 PM",
             "orderedBy": 8,
