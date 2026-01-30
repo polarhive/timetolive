@@ -1,0 +1,803 @@
+{
+  "meta": {
+    "Batch": "Main 002",
+    "Class Name": "Sem-2",
+    "Department": "2025-26",
+    "Room": "Main 002",
+    "Section": "Section B"
+  },
+  "schedule": [
+    {
+      "day": "Monday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE25CS151B",
+              "faculties": [
+                "KUNDHAVAI K R"
+              ],
+              "name": "PROBLEM SOLVING WITH C",
+              "raw": [
+                "ttSubject_&&UE25CS151B-PROBLEM SOLVING WITH C",
+                "ttFaculty_1_&&KUNDHAVAI K R"
+              ],
+              "sub_code": "C",
+              "subject": "UE25CS151B-PROBLEM SOLVING WITH C"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25MA141B",
+              "faculties": [
+                "JAGATHESWARI G K"
+              ],
+              "name": "ENGINEERING MATHEMATICS - II",
+              "raw": [
+                "ttSubject_&&UE25MA141B-ENGINEERING MATHEMATICS - II",
+                "ttFaculty_1_&&JAGATHESWARI G K"
+              ],
+              "sub_code": "M2",
+              "subject": "UE25MA141B-ENGINEERING MATHEMATICS - II"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25EE141B",
+              "faculties": [
+                "LOKESH L"
+              ],
+              "name": "ELEMENTS OF ELECTRICAL ENGINEERING",
+              "raw": [
+                "ttSubject_&&UE25EE141B-ELEMENTS OF ELECTRICAL ENGINEERING",
+                "ttFaculty_1_&&LOKESH L"
+              ],
+              "sub_code": "EEE",
+              "subject": "UE25EE141B-ELEMENTS OF ELECTRICAL ENGINEERING"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25ME141B",
+              "faculties": [
+                "S V SATISH"
+              ],
+              "name": "MECHANICAL ENGINEERING SCIENCES",
+              "raw": [
+                "ttSubject_&&UE25ME141B-MECHANICAL ENGINEERING SCIENCES",
+                "ttFaculty_1_&&S V SATISH"
+              ],
+              "sub_code": "MES",
+              "subject": "UE25ME141B-MECHANICAL ENGINEERING SCIENCES"
+            }
+          ],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25PH151B(LAB)",
+              "faculties": [
+                "DR MUHAMMAD FAISAL",
+                "DR  MOHANA LAKSHMI",
+                "TABASSUM SULTHANA T"
+              ],
+              "name": "ENGINEERING PHYSICS INTEGRATED WITH LAB",
+              "raw": [
+                "ttSubject_&&UE25PH151B(LAB)-ENGINEERING PHYSICS INTEGRATED WITH LAB",
+                "ttFaculty_1_&&DR MUHAMMAD FAISAL",
+                "ttFaculty_2_&&DR  MOHANA LAKSHMI",
+                "ttFaculty_3_&&TABASSUM SULTHANA T"
+              ],
+              "sub_code": "",
+              "subject": "UE25PH151B(LAB)-ENGINEERING PHYSICS INTEGRATED WITH LAB"
+            }
+          ],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25PH151B(LAB)",
+              "faculties": [
+                "DR MUHAMMAD FAISAL",
+                "DR  MOHANA LAKSHMI",
+                "TABASSUM SULTHANA T"
+              ],
+              "name": "ENGINEERING PHYSICS INTEGRATED WITH LAB",
+              "raw": [
+                "ttSubject_&&UE25PH151B(LAB)-ENGINEERING PHYSICS INTEGRATED WITH LAB",
+                "ttFaculty_1_&&DR MUHAMMAD FAISAL",
+                "ttFaculty_2_&&DR  MOHANA LAKSHMI",
+                "ttFaculty_3_&&TABASSUM SULTHANA T"
+              ],
+              "sub_code": "",
+              "subject": "UE25PH151B(LAB)-ENGINEERING PHYSICS INTEGRATED WITH LAB"
+            }
+          ],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE25EE141B",
+              "faculties": [
+                "LOKESH L"
+              ],
+              "name": "ELEMENTS OF ELECTRICAL ENGINEERING",
+              "raw": [
+                "ttSubject_&&UE25EE141B-ELEMENTS OF ELECTRICAL ENGINEERING",
+                "ttFaculty_1_&&LOKESH L"
+              ],
+              "sub_code": "EEE",
+              "subject": "UE25EE141B-ELEMENTS OF ELECTRICAL ENGINEERING"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25PH151B",
+              "faculties": [
+                "DR  MOHANA LAKSHMI"
+              ],
+              "name": "ENGINEERING PHYSICS",
+              "raw": [
+                "ttSubject_&&UE25PH151B-ENGINEERING PHYSICS",
+                "ttFaculty_1_&&DR  MOHANA LAKSHMI"
+              ],
+              "sub_code": "Physics",
+              "subject": "UE25PH151B-ENGINEERING PHYSICS"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25CS151B",
+              "faculties": [
+                "KUNDHAVAI K R"
+              ],
+              "name": "PROBLEM SOLVING WITH C",
+              "raw": [
+                "ttSubject_&&UE25CS151B-PROBLEM SOLVING WITH C",
+                "ttFaculty_1_&&KUNDHAVAI K R"
+              ],
+              "sub_code": "C",
+              "subject": "UE25CS151B-PROBLEM SOLVING WITH C"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25CS151B",
+              "faculties": [
+                "KUNDHAVAI K R"
+              ],
+              "name": "PROBLEM SOLVING WITH C",
+              "raw": [
+                "ttSubject_&&UE25CS151B-PROBLEM SOLVING WITH C",
+                "ttFaculty_1_&&KUNDHAVAI K R"
+              ],
+              "sub_code": "C",
+              "subject": "UE25CS151B-PROBLEM SOLVING WITH C"
+            }
+          ],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25MA141B",
+              "faculties": [
+                "JAGATHESWARI G K"
+              ],
+              "name": "ENGINEERING MATHEMATICS - II",
+              "raw": [
+                "ttSubject_&&UE25MA141B-ENGINEERING MATHEMATICS - II",
+                "ttFaculty_1_&&JAGATHESWARI G K"
+              ],
+              "sub_code": "M2",
+              "subject": "UE25MA141B-ENGINEERING MATHEMATICS - II"
+            }
+          ],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE25PH151B",
+              "faculties": [
+                "DR  MOHANA LAKSHMI"
+              ],
+              "name": "ENGINEERING PHYSICS",
+              "raw": [
+                "ttSubject_&&UE25PH151B-ENGINEERING PHYSICS",
+                "ttFaculty_1_&&DR  MOHANA LAKSHMI"
+              ],
+              "sub_code": "Physics",
+              "subject": "UE25PH151B-ENGINEERING PHYSICS"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25ME141B",
+              "faculties": [
+                "S V SATISH"
+              ],
+              "name": "MECHANICAL ENGINEERING SCIENCES",
+              "raw": [
+                "ttSubject_&&UE25ME141B-MECHANICAL ENGINEERING SCIENCES",
+                "ttFaculty_1_&&S V SATISH"
+              ],
+              "sub_code": "MES",
+              "subject": "UE25ME141B-MECHANICAL ENGINEERING SCIENCES"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25MA141B",
+              "faculties": [
+                "JAGATHESWARI G K"
+              ],
+              "name": "ENGINEERING MATHEMATICS - II",
+              "raw": [
+                "ttSubject_&&UE25MA141B-ENGINEERING MATHEMATICS - II",
+                "ttFaculty_1_&&JAGATHESWARI G K"
+              ],
+              "sub_code": "M2",
+              "subject": "UE25MA141B-ENGINEERING MATHEMATICS - II"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25EE141B",
+              "faculties": [
+                "LOKESH L"
+              ],
+              "name": "ELEMENTS OF ELECTRICAL ENGINEERING",
+              "raw": [
+                "ttSubject_&&UE25EE141B-ELEMENTS OF ELECTRICAL ENGINEERING",
+                "ttFaculty_1_&&LOKESH L"
+              ],
+              "sub_code": "EEE",
+              "subject": "UE25EE141B-ELEMENTS OF ELECTRICAL ENGINEERING"
+            }
+          ],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE25MA141B",
+              "faculties": [
+                "JAGATHESWARI G K"
+              ],
+              "name": "ENGINEERING MATHEMATICS - II",
+              "raw": [
+                "ttSubject_&&UE25MA141B-ENGINEERING MATHEMATICS - II",
+                "ttFaculty_1_&&JAGATHESWARI G K"
+              ],
+              "sub_code": "M2",
+              "subject": "UE25MA141B-ENGINEERING MATHEMATICS - II"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25ME141B",
+              "faculties": [
+                "S V SATISH"
+              ],
+              "name": "MECHANICAL ENGINEERING SCIENCES",
+              "raw": [
+                "ttSubject_&&UE25ME141B-MECHANICAL ENGINEERING SCIENCES",
+                "ttFaculty_1_&&S V SATISH"
+              ],
+              "sub_code": "MES",
+              "subject": "UE25ME141B-MECHANICAL ENGINEERING SCIENCES"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25EE141B",
+              "faculties": [
+                "LOKESH L"
+              ],
+              "name": "ELEMENTS OF ELECTRICAL ENGINEERING",
+              "raw": [
+                "ttSubject_&&UE25EE141B-ELEMENTS OF ELECTRICAL ENGINEERING",
+                "ttFaculty_1_&&LOKESH L"
+              ],
+              "sub_code": "EEE",
+              "subject": "UE25EE141B-ELEMENTS OF ELECTRICAL ENGINEERING"
+            }
+          ],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25PH151B",
+              "faculties": [
+                "DR  MOHANA LAKSHMI"
+              ],
+              "name": "ENGINEERING PHYSICS",
+              "raw": [
+                "ttSubject_&&UE25PH151B-ENGINEERING PHYSICS",
+                "ttFaculty_1_&&DR  MOHANA LAKSHMI"
+              ],
+              "sub_code": "Physics",
+              "subject": "UE25PH151B-ENGINEERING PHYSICS"
+            }
+          ],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Friday",
+      "slots": [
+        {
+          "cells": [
+            {
+              "code": "UE25MA141B",
+              "faculties": [
+                "JAGATHESWARI G K"
+              ],
+              "name": "ENGINEERING MATHEMATICS - II",
+              "raw": [
+                "ttSubject_&&UE25MA141B-ENGINEERING MATHEMATICS - II",
+                "ttFaculty_1_&&JAGATHESWARI G K"
+              ],
+              "sub_code": "M2",
+              "subject": "UE25MA141B-ENGINEERING MATHEMATICS - II"
+            }
+          ],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25PH151B",
+              "faculties": [
+                "DR  MOHANA LAKSHMI"
+              ],
+              "name": "ENGINEERING PHYSICS",
+              "raw": [
+                "ttSubject_&&UE25PH151B-ENGINEERING PHYSICS",
+                "ttFaculty_1_&&DR  MOHANA LAKSHMI"
+              ],
+              "sub_code": "Physics",
+              "subject": "UE25PH151B-ENGINEERING PHYSICS"
+            }
+          ],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25ME141B",
+              "faculties": [
+                "S V SATISH"
+              ],
+              "name": "MECHANICAL ENGINEERING SCIENCES",
+              "raw": [
+                "ttSubject_&&UE25ME141B-MECHANICAL ENGINEERING SCIENCES",
+                "ttFaculty_1_&&S V SATISH"
+              ],
+              "sub_code": "MES",
+              "subject": "UE25ME141B-MECHANICAL ENGINEERING SCIENCES"
+            }
+          ],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [
+            {
+              "code": "UE25CS151B",
+              "faculties": [
+                "KUNDHAVAI K R"
+              ],
+              "name": "PROBLEM SOLVING WITH C",
+              "raw": [
+                "ttSubject_&&UE25CS151B-PROBLEM SOLVING WITH C",
+                "ttFaculty_1_&&KUNDHAVAI K R"
+              ],
+              "sub_code": "C",
+              "subject": "UE25CS151B-PROBLEM SOLVING WITH C"
+            }
+          ],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "slots": [
+        {
+          "cells": [],
+          "slot": {
+            "label": "08:45 AM-09:45 AM",
+            "orderedBy": 1,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "09:45 AM-10:45 AM",
+            "orderedBy": 2,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 3,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "11:15 AM-12:15 PM",
+            "orderedBy": 4,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "12:15 PM-01:15 PM",
+            "orderedBy": 5,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "BREAK",
+            "orderedBy": 6,
+            "status": 1
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "02:00 PM-03:00 PM",
+            "orderedBy": 7,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "03:00 PM-04:00 PM",
+            "orderedBy": 8,
+            "status": 0
+          }
+        },
+        {
+          "cells": [],
+          "slot": {
+            "label": "04:00 PM-04:45 PM",
+            "orderedBy": 9,
+            "status": 0
+          }
+        }
+      ]
+    }
+  ]
+}
