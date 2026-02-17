@@ -1,9 +1,9 @@
 {
   "meta": {
-    "Batch": "Main 400",
+    "Batch": "Main 506",
     "Class Name": "Sem-4",
     "Department": "2024-25",
-    "Room": "Main 400",
+    "Room": "Main 506",
     "Section": "Section J"
   },
   "schedule": [
@@ -90,13 +90,25 @@
               "code": "UE24MA241B",
               "faculties": [
                 "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
                 "RAVIKUMAR R"
               ],
               "name": "LINEAR ALGEBRA AND ITS APPLICATIONS",
               "raw": [
                 "ttSubject_&&UE24MA241B-LINEAR ALGEBRA AND ITS APPLICATIONS",
                 "ttFaculty_1_&&RAVIKUMAR R",
-                "ttFaculty_2_&&RAVIKUMAR R"
+                "ttFaculty_2_&&RAVIKUMAR R",
+                "ttFaculty_3_&&RAVIKUMAR R",
+                "ttFaculty_4_&&RAVIKUMAR R",
+                "ttFaculty_5_&&RAVIKUMAR R",
+                "ttFaculty_6_&&RAVIKUMAR R",
+                "ttFaculty_7_&&RAVIKUMAR R",
+                "ttFaculty_8_&&RAVIKUMAR R"
               ],
               "sub_code": "LA",
               "subject": "UE24MA241B-LINEAR ALGEBRA AND ITS APPLICATIONS"
@@ -173,13 +185,25 @@
               "code": "UE24MA241B",
               "faculties": [
                 "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
                 "RAVIKUMAR R"
               ],
               "name": "LINEAR ALGEBRA AND ITS APPLICATIONS",
               "raw": [
                 "ttSubject_&&UE24MA241B-LINEAR ALGEBRA AND ITS APPLICATIONS",
                 "ttFaculty_1_&&RAVIKUMAR R",
-                "ttFaculty_2_&&RAVIKUMAR R"
+                "ttFaculty_2_&&RAVIKUMAR R",
+                "ttFaculty_3_&&RAVIKUMAR R",
+                "ttFaculty_4_&&RAVIKUMAR R",
+                "ttFaculty_5_&&RAVIKUMAR R",
+                "ttFaculty_6_&&RAVIKUMAR R",
+                "ttFaculty_7_&&RAVIKUMAR R",
+                "ttFaculty_8_&&RAVIKUMAR R"
               ],
               "sub_code": "LA",
               "subject": "UE24MA241B-LINEAR ALGEBRA AND ITS APPLICATIONS"
@@ -308,13 +332,25 @@
               "code": "UE24MA241B",
               "faculties": [
                 "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
                 "RAVIKUMAR R"
               ],
               "name": "LINEAR ALGEBRA AND ITS APPLICATIONS",
               "raw": [
                 "ttSubject_&&UE24MA241B-LINEAR ALGEBRA AND ITS APPLICATIONS",
                 "ttFaculty_1_&&RAVIKUMAR R",
-                "ttFaculty_2_&&RAVIKUMAR R"
+                "ttFaculty_2_&&RAVIKUMAR R",
+                "ttFaculty_3_&&RAVIKUMAR R",
+                "ttFaculty_4_&&RAVIKUMAR R",
+                "ttFaculty_5_&&RAVIKUMAR R",
+                "ttFaculty_6_&&RAVIKUMAR R",
+                "ttFaculty_7_&&RAVIKUMAR R",
+                "ttFaculty_8_&&RAVIKUMAR R"
               ],
               "sub_code": "LA",
               "subject": "UE24MA241B-LINEAR ALGEBRA AND ITS APPLICATIONS"
@@ -449,13 +485,25 @@
               "code": "UE24MA241B",
               "faculties": [
                 "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
+                "RAVIKUMAR R",
                 "RAVIKUMAR R"
               ],
               "name": "LINEAR ALGEBRA AND ITS APPLICATIONS",
               "raw": [
                 "ttSubject_&&UE24MA241B-LINEAR ALGEBRA AND ITS APPLICATIONS",
                 "ttFaculty_1_&&RAVIKUMAR R",
-                "ttFaculty_2_&&RAVIKUMAR R"
+                "ttFaculty_2_&&RAVIKUMAR R",
+                "ttFaculty_3_&&RAVIKUMAR R",
+                "ttFaculty_4_&&RAVIKUMAR R",
+                "ttFaculty_5_&&RAVIKUMAR R",
+                "ttFaculty_6_&&RAVIKUMAR R",
+                "ttFaculty_7_&&RAVIKUMAR R",
+                "ttFaculty_8_&&RAVIKUMAR R"
               ],
               "sub_code": "LA",
               "subject": "UE24MA241B-LINEAR ALGEBRA AND ITS APPLICATIONS"
