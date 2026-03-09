@@ -443,17 +443,17 @@
         {
           "cells": [
             {
-              "code": "UE23CS352B",
+              "code": "UE23CS341B",
               "faculties": [
-                "NIVEDITA KASTURI"
+                "PREMA R"
               ],
-              "name": "OBJECT ORIENTED ANALYSIS AND DESIGN",
+              "name": "COMPILER DESIGN",
               "raw": [
-                "ttSubject_&&UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN",
-                "ttFaculty_1_&&NIVEDITA KASTURI"
+                "ttSubject_&&UE23CS341B-COMPILER DESIGN",
+                "ttFaculty_1_&&PREMA R"
               ],
-              "sub_code": "OOAD",
-              "subject": "UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN"
+              "sub_code": "CD",
+              "subject": "UE23CS341B-COMPILER DESIGN"
             }
           ],
           "slot": {
@@ -467,12 +467,12 @@
             {
               "code": "UE23CS341B",
               "faculties": [
-                "SHEMEEMA"
+                "PREMA R"
               ],
               "name": "COMPILER DESIGN",
               "raw": [
                 "ttSubject_&&UE23CS341B-COMPILER DESIGN",
-                "ttFaculty_1_&&SHEMEEMA"
+                "ttFaculty_1_&&PREMA R"
               ],
               "sub_code": "CD",
               "subject": "UE23CS341B-COMPILER DESIGN"
@@ -667,17 +667,17 @@
         {
           "cells": [
             {
-              "code": "UE23CS341B",
+              "code": "UE23CS352B",
               "faculties": [
-                "SHEMEEMA"
+                "NIVEDITA KASTURI"
               ],
-              "name": "COMPILER DESIGN",
+              "name": "OBJECT ORIENTED ANALYSIS AND DESIGN",
               "raw": [
-                "ttSubject_&&UE23CS341B-COMPILER DESIGN",
-                "ttFaculty_1_&&SHEMEEMA"
+                "ttSubject_&&UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN",
+                "ttFaculty_1_&&NIVEDITA KASTURI"
               ],
-              "sub_code": "CD",
-              "subject": "UE23CS341B-COMPILER DESIGN"
+              "sub_code": "OOAD",
+              "subject": "UE23CS352B-OBJECT ORIENTED ANALYSIS AND DESIGN"
             }
           ],
           "slot": {
